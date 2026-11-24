@@ -1,4 +1,4 @@
-# Portafolio · Evaluación del Entorno de Información en Guatemala (TikTok e Instagram)
+# Evaluación del Entorno de Información en Guatemala (TikTok e Instagram)
 
 Sitio estático para GitHub Pages. Por ahora el sitio muestra solo el proyecto 1.
 
