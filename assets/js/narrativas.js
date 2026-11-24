@@ -35,7 +35,7 @@ function sincronizarURL() {
 
 // ---------------------------------------------------------------- aviso de fuente
 const fechaLarga = (iso) => new Date(`${iso}T12:00:00`).toLocaleDateString("es-GT", { day: "numeric", month: "long", year: "numeric" });
-document.getElementById("aviso-fuente").innerHTML = `<p><strong>${meta.sintetica ? "Datos de ejemplo (inventados)." : "Datos reales."}</strong>
+document.getElementById("aviso-fuente").innerHTML = `<p><strong>${meta.sintetica ? '"Datos (sintetizados)".' : "Datos reales."}</strong>
   ${fmt.n(meta.publicaciones)} publicaciones de ${fmt.n(meta.cuentas)} cuentas, del ${fechaLarga(meta.desde)} al ${fechaLarga(meta.hasta)}.
   ${meta.seudonimizada ? "Los nombres de cuentas personales están ocultos." : ""}</p>`;
 
