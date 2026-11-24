@@ -1,0 +1,241 @@
+﻿cuenta,plataforma,tipo,seguidores,departamento,conf_ubicacion,publicaciones,tema_principal,pagerank,intermediacion,grado,comunidad
+ig_acti_005,instagram,activista,20386,Alta Verapaz,biografia,8,estado,0.00158,0.00259,9,1
+ig_acti_033,instagram,activista,89506,Guatemala,biografia,11,agua,0.01195,0.01707,22,0
+ig_acti_040,instagram,activista,14375,Retalhuleu,biografia,8,narcopolitica,0.00323,0.00241,8,1
+ig_acti_051,instagram,activista,2417,Guatemala,inferida,13,politica,0.00509,0.00724,18,0
+ig_acti_191,instagram,activista,4704,Guatemala,biografia,13,estado,0.00353,0.00371,14,0
+ig_acti_212,instagram,activista,1985,Guatemala,biografia,13,politica,0.00538,0.00319,17,0
+ig_acti_238,instagram,activista,4008,Izabal,biografia,23,agua,0.00324,0.01056,19,0
+ig_ciud_008,instagram,ciudadano,96,Alta Verapaz,biografia,2,politica,0.00135,7e-05,3,0
+ig_ciud_009,instagram,ciudadano,1758,Sololá,biografia,8,estado,0.00442,0.00443,13,2
+ig_ciud_011,instagram,ciudadano,1310,Suchitepéquez,biografia,4,narcopolitica,0.00208,0.00033,4,2
+ig_ciud_013,instagram,ciudadano,874,Guatemala,inferida,6,agua,0.00421,0.00337,10,0
+ig_ciud_015,instagram,ciudadano,217,Jutiapa,inferida,6,agua,0.00524,0.00196,8,0
+ig_ciud_032,instagram,ciudadano,239,Quetzaltenango,biografia,6,estado,0.00092,9e-05,2,2
+ig_ciud_036,instagram,ciudadano,690,Chimaltenango,biografia,3,agua,0.00074,6e-05,2,2
+ig_ciud_041,instagram,ciudadano,2817,,,3,politica,0.00182,0.00067,5,0
+ig_ciud_046,instagram,ciudadano,1788,Izabal,inferida,6,politica,0.00074,9e-05,3,0
+ig_ciud_048,instagram,ciudadano,1487,,,2,estado,0.00138,0.00012,3,0
+ig_ciud_059,instagram,ciudadano,23956,Chimaltenango,inferida,4,politica,0.00666,0.00342,10,2
+ig_ciud_063,instagram,ciudadano,2082,San Marcos,biografia,2,estado,0.00086,6e-05,4,0
+ig_ciud_065,instagram,ciudadano,2713,Alta Verapaz,biografia,6,narcopolitica,0.00381,0.00114,6,0
+ig_ciud_070,instagram,ciudadano,253,Quiché,inferida,12,agua,0.00182,0.00108,6,0
+ig_ciud_076,instagram,ciudadano,220,Guatemala,inferida,8,agua,0.00074,0.00038,5,0
+ig_ciud_077,instagram,ciudadano,459,Guatemala,biografia,3,estado,0.00367,0.00154,9,0
+ig_ciud_081,instagram,ciudadano,2237,Alta Verapaz,biografia,6,politica,0.00113,0.00089,6,2
+ig_ciud_091,instagram,ciudadano,5890,Santa Rosa,biografia,11,politica,0.00316,0.0043,16,0
+ig_ciud_096,instagram,ciudadano,947,Zacapa,inferida,7,narcopolitica,0.00338,0.00315,9,0
+ig_ciud_099,instagram,ciudadano,1437,Guatemala,inferida,3,politica,0.00369,0.0009,7,0
+ig_ciud_104,instagram,ciudadano,1260,Jutiapa,inferida,7,estado,0.00298,0.00178,12,0
+ig_ciud_106,instagram,ciudadano,882,Zacapa,inferida,3,estado,0.00104,0.00013,2,0
+ig_ciud_108,instagram,ciudadano,1895,Guatemala,biografia,7,estado,0.00204,0.0003,5,0
+ig_ciud_111,instagram,ciudadano,752,Guatemala,inferida,5,narcopolitica,0.00357,0.0009,7,0
+ig_ciud_112,instagram,ciudadano,677,Quetzaltenango,inferida,7,politica,0.00234,0.00102,8,0
+ig_ciud_114,instagram,ciudadano,1079,Alta Verapaz,biografia,3,agua,0.00657,0.00203,9,0
+ig_ciud_116,instagram,ciudadano,4810,Suchitepéquez,biografia,2,,0.00141,4e-05,2,0
+ig_ciud_117,instagram,ciudadano,474,San Marcos,biografia,6,politica,0.00146,0.00172,5,0
+ig_ciud_129,instagram,ciudadano,661,Escuintla,biografia,4,estado,0.00177,0.00129,5,1
+ig_ciud_143,instagram,ciudadano,3044,Guatemala,biografia,7,estado,0.00421,0.00181,9,0
+ig_ciud_146,instagram,ciudadano,287,Jutiapa,biografia,9,narcopolitica,0.00074,0.00022,5,0
+ig_ciud_148,instagram,ciudadano,445,,,4,agua,0.00144,5e-05,2,0
+ig_ciud_153,instagram,ciudadano,2045,Quetzaltenango,biografia,3,narcopolitica,0.00347,0.00096,7,0
+ig_ciud_154,instagram,ciudadano,186,Guatemala,biografia,10,estado,0.00191,0.00264,8,1
+ig_ciud_161,instagram,ciudadano,173,San Marcos,biografia,8,politica,0.00096,0.00066,6,0
+ig_ciud_167,instagram,ciudadano,351,Huehuetenango,biografia,7,narcopolitica,0.00346,0.00181,7,1
+ig_ciud_168,instagram,ciudadano,793,Guatemala,inferida,7,estado,0.00508,0.00017,5,0
+ig_ciud_179,instagram,ciudadano,9062,Guatemala,biografia,3,narcopolitica,0.00483,0.0009,9,0
+ig_ciud_180,instagram,ciudadano,1084,Guatemala,biografia,2,agua,0.00324,0.00026,6,0
+ig_ciud_185,instagram,ciudadano,2523,Quiché,biografia,9,estado,0.00276,0.00122,7,0
+ig_ciud_193,instagram,ciudadano,105,San Marcos,inferida,5,estado,0.0015,0.00183,8,0
+ig_ciud_194,instagram,ciudadano,512,Guatemala,biografia,3,politica,0.00307,0.00201,7,1
+ig_ciud_196,instagram,ciudadano,982,Guatemala,inferida,8,estado,0.0025,0.00037,6,0
+ig_ciud_198,instagram,ciudadano,439,San Marcos,biografia,6,narcopolitica,0.00132,0.00013,3,0
+ig_ciud_210,instagram,ciudadano,1117,Quiché,biografia,5,estado,0.00165,0.00158,8,0
+ig_ciud_213,instagram,ciudadano,558,Petén,biografia,10,politica,0.00107,0.00121,6,0
+ig_ciud_225,instagram,ciudadano,7194,Guatemala,biografia,3,agua,0.00281,0.00092,5,2
+ig_ciud_227,instagram,ciudadano,4508,Sololá,biografia,8,agua,0.00467,0.00306,13,0
+ig_ciud_233,instagram,ciudadano,2047,Huehuetenango,inferida,7,politica,0.00134,0.00198,8,0
+ig_ciud_236,instagram,ciudadano,202,,,3,politica,0.00123,0.0001,3,0
+ig_crea_034,instagram,creador,4466,Huehuetenango,biografia,21,politica,0.00441,0.01241,19,0
+ig_crea_043,instagram,creador,32106,Chimaltenango,biografia,25,agua,0.00095,0.00616,18,0
+ig_crea_056,instagram,creador,96384,Quetzaltenango,inferida,10,politica,0.00829,0.01267,22,1
+ig_crea_061,instagram,creador,36950,Santa Rosa,biografia,10,politica,0.00298,0.00187,11,0
+ig_crea_064,instagram,creador,5417,Guatemala,inferida,13,agua,0.00366,0.00125,12,0
+ig_crea_066,instagram,creador,12143,Guatemala,inferida,22,narcopolitica,0.00532,0.0106,21,0
+ig_crea_072,instagram,creador,11030,Izabal,biografia,10,politica,0.00549,0.0061,15,1
+ig_crea_074,instagram,creador,38467,Huehuetenango,inferida,10,estado,0.00251,0.00186,9,0
+ig_crea_093,instagram,creador,9479,Chiquimula,biografia,24,estado,0.00156,0.00815,18,0
+ig_crea_105,instagram,creador,82182,Chiquimula,biografia,15,estado,0.00402,0.00509,14,0
+ig_crea_142,instagram,creador,9912,Chimaltenango,biografia,11,narcopolitica,0.00158,0.00379,9,0
+ig_crea_149,instagram,creador,9210,Guatemala,biografia,8,narcopolitica,0.00324,0.00113,7,0
+ig_crea_157,instagram,creador,9677,Guatemala,biografia,27,agua,0.00769,0.01319,25,0
+ig_crea_166,instagram,creador,36823,Quetzaltenango,biografia,23,agua,0.00183,0.00779,18,0
+ig_crea_209,instagram,creador,6236,Escuintla,biografia,26,narcopolitica,0.0029,0.01582,23,0
+ig_crea_221,instagram,creador,4463,Jutiapa,biografia,21,estado,0.00279,0.00444,12,0
+ig_crea_235,instagram,creador,16793,Alta Verapaz,biografia,11,estado,0.00349,0.00745,18,0
+ig_inst_012,instagram,institucional,5469,Guatemala,inferida,12,estado,0.00392,0.00545,14,0
+ig_inst_068,instagram,institucional,4676,Guatemala,biografia,4,narcopolitica,0.00842,0.00334,16,0
+ig_inst_085,instagram,institucional,16385,Quetzaltenango,biografia,9,politica,0.00544,0.00659,18,0
+ig_inst_121,instagram,institucional,4680,San Marcos,biografia,5,narcopolitica,0.00682,0.00374,13,2
+ig_inst_130,instagram,institucional,18929,Guatemala,biografia,8,agua,0.01459,0.00882,18,0
+ig_inst_175,instagram,institucional,66998,Guatemala,biografia,12,politica,0.0109,0.02018,28,0
+ig_inst_205,instagram,institucional,5207,Quetzaltenango,biografia,7,narcopolitica,0.00264,0.00087,7,0
+ig_inst_229,instagram,institucional,11161,Jutiapa,biografia,7,politica,0.00966,0.00978,15,0
+ig_medi_000,instagram,medio,70265,Guatemala,inferida,26,agua,0.00671,0.01075,23,0
+ig_medi_038,instagram,medio,21417,Baja Verapaz,biografia,30,agua,0.00609,0.02193,30,0
+ig_medi_050,instagram,medio,11916,Guatemala,biografia,15,agua,0.00872,0.01758,28,0
+ig_medi_054,instagram,medio,1117432,Guatemala,inferida,29,estado,0.01395,0.0311,35,0
+ig_medi_058,instagram,medio,39387,Quiché,inferida,40,estado,0.00782,0.02354,31,0
+ig_medi_067,instagram,medio,27979,Guatemala,biografia,34,agua,0.01402,0.03467,39,0
+ig_medi_069,instagram,medio,8016,Guatemala,biografia,27,narcopolitica,0.01326,0.02913,34,0
+ig_medi_089,instagram,medio,32795,Guatemala,inferida,17,politica,0.01144,0.01886,30,0
+ig_medi_094,instagram,medio,57052,Guatemala,inferida,27,agua,0.01061,0.02445,33,0
+ig_medi_103,instagram,medio,16129,Guatemala,biografia,17,agua,0.02688,0.02435,36,0
+ig_medi_113,instagram,medio,24766,Guatemala,biografia,31,agua,0.01018,0.02656,32,0
+ig_medi_125,instagram,medio,98684,Guatemala,biografia,26,politica,0.01244,0.0274,36,0
+ig_medi_132,instagram,medio,33620,Guatemala,inferida,22,politica,0.00795,0.01316,24,0
+ig_medi_144,instagram,medio,112081,Guatemala,biografia,32,estado,0.01395,0.02138,33,0
+ig_medi_145,instagram,medio,97521,Guatemala,biografia,21,estado,0.01086,0.01804,30,0
+ig_medi_162,instagram,medio,11818,Sololá,biografia,21,agua,0.00819,0.01,25,0
+ig_medi_176,instagram,medio,358678,Guatemala,biografia,8,agua,0.01074,0.01178,25,0
+ig_medi_192,instagram,medio,93135,Guatemala,inferida,12,agua,0.00766,0.01273,26,0
+ig_medi_199,instagram,medio,31453,Guatemala,biografia,22,agua,0.01079,0.02046,29,0
+ig_medi_217,instagram,medio,57825,Guatemala,biografia,25,agua,0.0043,0.01371,26,0
+ig_medi_226,instagram,medio,25378,Guatemala,inferida,31,estado,0.00469,0.0122,25,0
+ig_medi_231,instagram,medio,29272,Guatemala,biografia,31,agua,0.01017,0.02876,34,0
+tt_acti_016,tiktok,activista,6833,Jalapa,biografia,14,estado,0.00273,0.00368,15,0
+tt_acti_018,tiktok,activista,3094,Guatemala,inferida,26,agua,0.01181,0.0307,34,0
+tt_acti_042,tiktok,activista,14928,Jalapa,inferida,17,estado,0.0013,0.00328,11,1
+tt_acti_047,tiktok,activista,20615,Quetzaltenango,biografia,18,agua,0.00328,0.00706,17,0
+tt_acti_062,tiktok,activista,12705,Escuintla,inferida,7,agua,0.00354,0.00452,9,0
+tt_acti_079,tiktok,activista,7354,San Marcos,biografia,8,agua,0.00143,0.00161,7,0
+tt_acti_082,tiktok,activista,16199,Quiché,biografia,15,politica,0.002,0.00791,14,0
+tt_acti_118,tiktok,activista,7382,Guatemala,biografia,20,agua,0.0024,0.01024,18,0
+tt_acti_136,tiktok,activista,16470,San Marcos,biografia,21,agua,0.00303,0.00723,14,0
+tt_acti_138,tiktok,activista,1890,Guatemala,biografia,21,estado,0.00244,0.01196,17,0
+tt_acti_170,tiktok,activista,3053,San Marcos,biografia,16,politica,0.00153,0.01028,17,2
+tt_acti_178,tiktok,activista,5841,San Marcos,biografia,12,estado,0.00163,0.00288,10,0
+tt_acti_195,tiktok,activista,4796,Chimaltenango,biografia,22,politica,0.00198,0.01623,20,0
+tt_acti_219,tiktok,activista,9627,Totonicapán,inferida,13,agua,0.0032,0.00528,13,0
+tt_acti_228,tiktok,activista,2898,,,11,narcopolitica,0.00614,0.00492,14,0
+tt_acti_230,tiktok,activista,8643,Guatemala,inferida,12,politica,0.00206,0.00175,10,0
+tt_ciud_001,tiktok,ciudadano,2245,Sacatepéquez,biografia,8,politica,0.00199,0.00125,7,0
+tt_ciud_004,tiktok,ciudadano,3453,Chimaltenango,biografia,5,estado,0.00251,0.00131,6,0
+tt_ciud_006,tiktok,ciudadano,5941,San Marcos,biografia,3,politica,0.00187,0.0011,8,0
+tt_ciud_010,tiktok,ciudadano,3513,San Marcos,biografia,4,narcopolitica,0.00366,0.00247,9,2
+tt_ciud_019,tiktok,ciudadano,328,Retalhuleu,biografia,10,politica,0.00162,0.00268,10,1
+tt_ciud_020,tiktok,ciudadano,282,,,2,politica,0.00162,0.00124,7,1
+tt_ciud_021,tiktok,ciudadano,2767,Guatemala,biografia,1,agua,0.00303,0.00125,7,0
+tt_ciud_023,tiktok,ciudadano,1145,Chimaltenango,inferida,6,politica,0.00074,5e-05,2,0
+tt_ciud_024,tiktok,ciudadano,1527,,,3,politica,0.00171,0.00046,4,0
+tt_ciud_025,tiktok,ciudadano,748,Guatemala,biografia,6,estado,0.00074,0.00016,3,0
+tt_ciud_026,tiktok,ciudadano,1007,Izabal,biografia,2,agua,0.00123,0.00017,3,0
+tt_ciud_028,tiktok,ciudadano,809,Guatemala,inferida,2,narcopolitica,0.0057,0.00162,7,0
+tt_ciud_029,tiktok,ciudadano,1424,Suchitepéquez,biografia,4,agua,0.00322,0.00068,5,0
+tt_ciud_030,tiktok,ciudadano,866,Totonicapán,inferida,10,estado,0.00515,0.01228,13,1
+tt_ciud_031,tiktok,ciudadano,1312,Alta Verapaz,biografia,3,narcopolitica,0.00265,0.00088,6,0
+tt_ciud_035,tiktok,ciudadano,95,Guatemala,inferida,7,estado,0.00129,0.00121,7,0
+tt_ciud_037,tiktok,ciudadano,937,Escuintla,biografia,9,agua,0.00139,0.001,7,0
+tt_ciud_039,tiktok,ciudadano,747,Quiché,biografia,4,narcopolitica,0.00148,0.00092,5,0
+tt_ciud_044,tiktok,ciudadano,3811,,,5,estado,0.00291,0.00357,9,0
+tt_ciud_045,tiktok,ciudadano,1484,Guatemala,biografia,3,estado,0.00282,0.00104,5,0
+tt_ciud_052,tiktok,ciudadano,4961,Quiché,biografia,1,estado,0.00318,0.0003,3,0
+tt_ciud_053,tiktok,ciudadano,1712,Alta Verapaz,biografia,2,estado,0.00254,0.00169,7,1
+tt_ciud_055,tiktok,ciudadano,920,,,6,politica,0.00702,0.0018,6,0
+tt_ciud_060,tiktok,ciudadano,946,Chimaltenango,inferida,11,agua,0.00201,0.00558,14,0
+tt_ciud_071,tiktok,ciudadano,544,,,8,politica,0.00149,0.00246,9,0
+tt_ciud_078,tiktok,ciudadano,99,,,3,politica,0.00306,0.00133,7,1
+tt_ciud_080,tiktok,ciudadano,963,Chimaltenango,biografia,7,politica,0.00097,0.00019,3,0
+tt_ciud_083,tiktok,ciudadano,992,Jutiapa,inferida,10,politica,0.00407,0.00358,10,0
+tt_ciud_086,tiktok,ciudadano,1077,Petén,biografia,11,estado,0.00237,0.00147,9,1
+tt_ciud_088,tiktok,ciudadano,265,Guatemala,inferida,9,agua,0.0033,0.00224,10,1
+tt_ciud_092,tiktok,ciudadano,2157,Guatemala,inferida,4,estado,0.00469,0.00607,13,0
+tt_ciud_095,tiktok,ciudadano,755,Jutiapa,inferida,2,narcopolitica,0.0017,0.00079,5,0
+tt_ciud_097,tiktok,ciudadano,334,Baja Verapaz,inferida,7,politica,0.00174,0.00083,3,0
+tt_ciud_098,desconocida,,0,,,0,,0.00439,0.00366,7,2
+tt_ciud_101,tiktok,ciudadano,10146,Escuintla,biografia,7,politica,0.00255,0.00114,8,1
+tt_ciud_107,tiktok,ciudadano,740,Quetzaltenango,biografia,6,agua,0.00247,0.00416,7,0
+tt_ciud_109,tiktok,ciudadano,106,Chiquimula,biografia,1,estado,0.00332,0.0001,2,2
+tt_ciud_115,tiktok,ciudadano,336,Totonicapán,biografia,4,estado,0.00074,5e-05,2,0
+tt_ciud_119,tiktok,ciudadano,8067,Sololá,biografia,4,politica,0.0017,0.00149,5,0
+tt_ciud_122,desconocida,,0,,,0,,0.00243,0.00014,2,0
+tt_ciud_126,tiktok,ciudadano,3635,El Progreso,biografia,4,estado,0.00184,0.00185,4,0
+tt_ciud_131,tiktok,ciudadano,2810,Baja Verapaz,biografia,3,agua,0.00245,0.00083,7,0
+tt_ciud_134,tiktok,ciudadano,1082,Alta Verapaz,biografia,2,agua,0.00088,0.00026,4,0
+tt_ciud_137,tiktok,ciudadano,769,Totonicapán,biografia,5,agua,0.00179,0.00147,8,0
+tt_ciud_141,tiktok,ciudadano,7467,Sacatepéquez,biografia,6,estado,0.00124,0.00158,9,0
+tt_ciud_151,tiktok,ciudadano,343,Huehuetenango,biografia,4,politica,0.0042,0.00178,7,0
+tt_ciud_152,tiktok,ciudadano,764,Guatemala,inferida,7,agua,0.00593,0.00125,7,0
+tt_ciud_155,tiktok,ciudadano,225,Guatemala,biografia,3,politica,0.00145,0.00011,4,0
+tt_ciud_156,tiktok,ciudadano,1021,Escuintla,inferida,6,agua,0.00283,0.00237,6,0
+tt_ciud_159,tiktok,ciudadano,1114,Sololá,biografia,1,agua,0.00272,0.00101,7,0
+tt_ciud_160,tiktok,ciudadano,615,San Marcos,biografia,2,politica,0.00446,0.00143,6,0
+tt_ciud_163,tiktok,ciudadano,160,Petén,inferida,7,estado,0.00123,9e-05,3,0
+tt_ciud_164,tiktok,ciudadano,1055,Huehuetenango,biografia,5,politica,0.00155,0.00427,9,0
+tt_ciud_169,tiktok,ciudadano,1068,Quiché,biografia,4,narcopolitica,0.00371,0.00283,7,0
+tt_ciud_171,tiktok,ciudadano,1684,Petén,inferida,7,narcopolitica,0.00184,0.00063,4,0
+tt_ciud_172,tiktok,ciudadano,506,Alta Verapaz,biografia,6,estado,0.00082,0.00093,5,1
+tt_ciud_173,tiktok,ciudadano,346,Guatemala,biografia,4,agua,0.00165,0.00074,8,1
+tt_ciud_174,tiktok,ciudadano,5309,Guatemala,biografia,4,politica,0.00571,0.00556,9,0
+tt_ciud_177,tiktok,ciudadano,248,Petén,biografia,8,narcopolitica,0.00232,0.00244,8,0
+tt_ciud_181,tiktok,ciudadano,317,Izabal,inferida,6,agua,0.00233,0.00136,7,0
+tt_ciud_183,tiktok,ciudadano,429,Sololá,inferida,7,estado,0.0012,0.00075,7,0
+tt_ciud_186,tiktok,ciudadano,1361,Chimaltenango,biografia,4,politica,0.00107,0.0012,5,0
+tt_ciud_187,tiktok,ciudadano,275,Guatemala,inferida,5,agua,0.0011,0.00021,4,2
+tt_ciud_188,tiktok,ciudadano,1459,Totonicapán,biografia,7,agua,0.00375,0.00211,9,0
+tt_ciud_189,tiktok,ciudadano,4871,Quetzaltenango,inferida,7,politica,0.00286,0.00128,9,0
+tt_ciud_197,tiktok,ciudadano,291,Suchitepéquez,biografia,6,narcopolitica,0.00166,0.0015,8,0
+tt_ciud_201,tiktok,ciudadano,445,Guatemala,inferida,9,agua,0.00295,0.00289,11,0
+tt_ciud_203,tiktok,ciudadano,234,Guatemala,biografia,3,estado,0.00297,0.00175,8,0
+tt_ciud_204,tiktok,ciudadano,246,Totonicapán,biografia,2,estado,0.00213,0.00057,4,1
+tt_ciud_206,tiktok,ciudadano,6420,Guatemala,biografia,3,politica,0.00514,0.00139,10,0
+tt_ciud_211,tiktok,ciudadano,1402,Alta Verapaz,biografia,5,politica,0.00935,0.00407,10,0
+tt_ciud_218,tiktok,ciudadano,553,Guatemala,biografia,7,agua,0.00229,0.0004,7,1
+tt_ciud_220,tiktok,ciudadano,206,Guatemala,inferida,4,estado,0.00409,0.00068,5,0
+tt_ciud_222,tiktok,ciudadano,957,Quiché,biografia,5,politica,0.00316,0.00099,6,0
+tt_ciud_223,tiktok,ciudadano,3309,Izabal,biografia,11,politica,0.0036,0.00331,13,0
+tt_ciud_224,tiktok,ciudadano,450,San Marcos,biografia,6,agua,0.00228,0.0006,6,0
+tt_ciud_239,tiktok,ciudadano,652,Chimaltenango,biografia,6,estado,0.0019,0.00181,7,0
+tt_crea_002,tiktok,creador,16437,Santa Rosa,inferida,14,narcopolitica,0.00201,0.0043,11,0
+tt_crea_007,tiktok,creador,22512,Guatemala,biografia,15,agua,0.00519,0.00791,17,0
+tt_crea_014,tiktok,creador,28582,Quetzaltenango,biografia,20,agua,0.00479,0.0135,23,0
+tt_crea_017,tiktok,creador,7388,Alta Verapaz,inferida,15,narcopolitica,0.0021,0.00587,13,0
+tt_crea_049,tiktok,creador,11109,Petén,inferida,30,politica,0.00185,0.01251,20,2
+tt_crea_057,tiktok,creador,3074,Guatemala,biografia,13,agua,0.00472,0.00497,16,0
+tt_crea_075,tiktok,creador,13530,Quiché,inferida,8,agua,0.00252,0.00366,11,0
+tt_crea_084,tiktok,creador,5254,Sololá,inferida,22,politica,0.00279,0.01305,22,1
+tt_crea_102,tiktok,creador,2851,San Marcos,biografia,14,narcopolitica,0.00339,0.00531,14,0
+tt_crea_110,tiktok,creador,7970,Guatemala,biografia,12,politica,0.00317,0.00834,16,0
+tt_crea_120,tiktok,creador,5564,San Marcos,inferida,23,estado,0.00197,0.00625,15,2
+tt_crea_133,tiktok,creador,13407,Guatemala,inferida,10,politica,0.00865,0.00579,14,0
+tt_crea_135,tiktok,creador,1682,Guatemala,biografia,19,politica,0.00307,0.00772,17,0
+tt_crea_139,tiktok,creador,26068,Retalhuleu,biografia,9,narcopolitica,0.00182,0.00571,11,0
+tt_crea_147,tiktok,creador,27259,Guatemala,biografia,8,agua,0.00811,0.00281,12,0
+tt_crea_150,tiktok,creador,9416,Guatemala,biografia,18,politica,0.00286,0.00922,15,0
+tt_crea_158,tiktok,creador,17729,Quetzaltenango,biografia,9,estado,0.00256,0.00604,11,0
+tt_crea_182,tiktok,creador,11001,Jutiapa,biografia,18,politica,0.00524,0.00925,16,0
+tt_crea_184,tiktok,creador,7652,Sacatepéquez,inferida,8,agua,0.00193,0.00127,8,0
+tt_crea_190,tiktok,creador,7410,Huehuetenango,biografia,19,agua,0.00389,0.01989,24,0
+tt_crea_200,tiktok,creador,5859,Quiché,inferida,12,estado,0.00463,0.00972,19,2
+tt_crea_202,tiktok,creador,13765,Guatemala,biografia,12,politica,0.00755,0.01057,23,0
+tt_crea_207,tiktok,creador,24968,Jutiapa,biografia,17,narcopolitica,0.00115,0.00454,12,0
+tt_crea_208,tiktok,creador,30132,Guatemala,biografia,5,politica,0.00784,0.00548,14,0
+tt_crea_215,tiktok,creador,11436,Baja Verapaz,inferida,15,estado,0.0026,0.00424,13,0
+tt_crea_232,tiktok,creador,50696,Chimaltenango,biografia,13,politica,0.0014,0.00332,11,1
+tt_crea_237,tiktok,creador,9622,Alta Verapaz,inferida,17,agua,0.00254,0.00379,11,0
+tt_inst_022,tiktok,institucional,2743,Quetzaltenango,biografia,9,politica,0.00191,0.00152,9,0
+tt_inst_027,tiktok,institucional,43231,Guatemala,biografia,5,politica,0.00434,0.01041,15,0
+tt_inst_090,tiktok,institucional,19023,Suchitepéquez,biografia,6,estado,0.00638,0.00134,10,0
+tt_inst_216,tiktok,institucional,4273,San Marcos,biografia,10,estado,0.00719,0.01499,16,2
+tt_medi_003,tiktok,medio,86449,Guatemala,inferida,37,agua,0.01018,0.03549,37,0
+tt_medi_073,tiktok,medio,121245,Guatemala,biografia,32,agua,0.0088,0.02638,31,0
+tt_medi_087,tiktok,medio,7109,San Marcos,biografia,40,agua,0.00392,0.03738,35,0
+tt_medi_100,tiktok,medio,12461,Petén,biografia,30,politica,0.00876,0.02608,29,0
+tt_medi_123,tiktok,medio,130040,Guatemala,inferida,20,agua,0.00676,0.02154,31,0
+tt_medi_124,tiktok,medio,96306,Guatemala,inferida,12,estado,0.0109,0.01091,22,0
+tt_medi_127,tiktok,medio,53836,Alta Verapaz,biografia,14,politica,0.00746,0.01372,22,0
+tt_medi_128,tiktok,medio,69484,Guatemala,inferida,19,agua,0.01013,0.0228,29,0
+tt_medi_140,tiktok,medio,34866,Petén,inferida,27,estado,0.01031,0.03904,36,0
+tt_medi_165,tiktok,medio,40801,Guatemala,biografia,4,narcopolitica,0.00925,0.00749,18,0
+tt_medi_214,tiktok,medio,14387,Guatemala,inferida,10,agua,0.00866,0.01202,20,1
+tt_medi_234,tiktok,medio,69162,Guatemala,biografia,23,agua,0.0099,0.00538,18,0

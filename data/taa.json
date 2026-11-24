@@ -1,0 +1,1404 @@
+{
+ "constructos": {
+  "CI": "Confianza institucional",
+  "PR": "Percepción de riesgo",
+  "AM": "Alfabetización mediática",
+  "IC": "Intención de compartir sin verificar"
+ },
+ "n_total": 600,
+ "alfa_cronbach": {
+  "CI": 0.836,
+  "PR": 0.847,
+  "AM": 0.845,
+  "IC": 0.861
+ },
+ "correlaciones": {
+  "AM_IC": -0.488,
+  "CI_IC": -0.068,
+  "PR_IC": 0.135,
+  "CI_PR": 0.134
+ },
+ "segmentos": [
+  {
+   "id": "TA1",
+   "nombre": "Madres y padres de familia de colonias de Mixco y Villa Nueva",
+   "plataforma": "instagram",
+   "edad": "30-50",
+   "n": 170,
+   "condiciones": "Cortes de agua recurrentes y dependencia de camiones cisterna en varias colonias; poca información municipal sobre horarios de servicio.",
+   "vulnerabilidades": [
+    "Miedo a no poder llenar toneles y pilas del hogar",
+    "Desconfianza hacia el servicio municipal de agua",
+    "Grupos vecinales como fuente principal"
+   ],
+   "motivaciones": [
+    "Proteger a la familia",
+    "Previsibilidad",
+    "Pertenencia a la colonia"
+   ],
+   "formatos": [
+    "Historias con datos de la colonia",
+    "Carruseles explicativos",
+    "Reels cortos de líderes del COCODE"
+   ],
+   "horario": "19:00-22:00",
+   "voces_creibles": [
+    "Presidentes de COCODE",
+    "Enfermeras del centro de salud"
+   ],
+   "comportamiento_deseado": "Consultar el horario oficial de servicio de su municipalidad antes de compartir y no acaparar agua.",
+   "accesibilidad": 4.4,
+   "medias": {
+    "CI": 2.41,
+    "PR": 4.02,
+    "AM": 2.69,
+    "IC": 3.46
+   },
+   "de": {
+    "CI": 0.8,
+    "PR": 0.67,
+    "AM": 0.84,
+    "IC": 0.82
+   },
+   "susceptibilidad": 3.56,
+   "efecto": 3.92,
+   "prioridad": 61.5,
+   "rango": 1
+  },
+  {
+   "id": "TA4",
+   "nombre": "Tiendas de barrio y expendios de agua purificada (garrafones)",
+   "plataforma": "instagram",
+   "edad": "25-60",
+   "n": 120,
+   "condiciones": "Se ven afectados por compras de pánico (desabasto y quejas) pero también obtienen ventas a corto plazo.",
+   "vulnerabilidades": [
+    "Incentivo económico ambivalente",
+    "Clientes que les piden confirmación"
+   ],
+   "motivaciones": [
+    "Estabilidad del negocio",
+    "Reputación en el barrio"
+   ],
+   "formatos": [
+    "Material imprimible para mostrador",
+    "Publicaciones en colaboración",
+    "Audios cortos en español y kaqchikel"
+   ],
+   "horario": "07:00-09:00",
+   "voces_creibles": [
+    "Asociaciones de comerciantes del municipio",
+    "Otros tenderos"
+   ],
+   "comportamiento_deseado": "Exhibir información verificada y limitar ventas por cliente durante picos.",
+   "accesibilidad": 4.0,
+   "medias": {
+    "CI": 2.92,
+    "PR": 3.71,
+    "AM": 2.8,
+    "IC": 3.04
+   },
+   "de": {
+    "CI": 0.81,
+    "PR": 0.75,
+    "AM": 0.85,
+    "IC": 0.86
+   },
+   "susceptibilidad": 3.7,
+   "efecto": 3.28,
+   "prioridad": 48.5,
+   "rango": 2
+  },
+  {
+   "id": "TA2",
+   "nombre": "Universitarios y creadores jóvenes de la Ciudad de Guatemala",
+   "plataforma": "tiktok",
+   "edad": "18-24",
+   "n": 160,
+   "condiciones": "Alta exposición a contenido viral; escepticismo hacia las instituciones; sensibles a la autenticidad.",
+   "vulnerabilidades": [
+    "Rechazo al tono institucional",
+    "Recompensa social por publicar primero"
+   ],
+   "motivaciones": [
+    "Autenticidad",
+    "Humor",
+    "Reconocimiento entre pares"
+   ],
+   "formatos": [
+    "Duetos/stitch que desmontan el bulo",
+    "Tendencias de audio",
+    "Retos de verificación"
+   ],
+   "horario": "21:00-01:00",
+   "voces_creibles": [
+    "Creadores guatemaltecos de divulgación",
+    "Estudiantes de ingeniería ambiental"
+   ],
+   "comportamiento_deseado": "Crear y compartir respuestas tipo stitch que expliquen la técnica de manipulación.",
+   "accesibilidad": 3.9,
+   "medias": {
+    "CI": 2.2,
+    "PR": 2.9,
+    "AM": 3.67,
+    "IC": 2.55
+   },
+   "de": {
+    "CI": 0.76,
+    "PR": 0.84,
+    "AM": 0.75,
+    "IC": 0.81
+   },
+   "susceptibilidad": 2.88,
+   "efecto": 3.21,
+   "prioridad": 36.1,
+   "rango": 3
+  },
+  {
+   "id": "TA3",
+   "nombre": "Consumidores habituales de memes políticos",
+   "plataforma": "tiktok",
+   "edad": "20-40",
+   "n": 150,
+   "condiciones": "Núcleo que ya acepta la narrativa; identidad de grupo definida por oposición a las autoridades.",
+   "vulnerabilidades": [
+    "Sesgo de confirmación fuerte",
+    "Efecto contraproducente (backfire) ante desmentidos directos"
+   ],
+   "motivaciones": [
+    "Identidad de grupo",
+    "Indignación",
+    "Entretenimiento"
+   ],
+   "formatos": [
+    "Humor que no ataca al grupo",
+    "Mensajes de interés propio (ahorro, salud)"
+   ],
+   "horario": "12:00-14:00 y 20:00-23:00",
+   "voces_creibles": [
+    "Pares dentro del grupo",
+    "Dueños de tiendas de barrio"
+   ],
+   "comportamiento_deseado": "Reducir la reproducción del contenido; no se busca un cambio de actitud a corto plazo.",
+   "accesibilidad": 2.6,
+   "medias": {
+    "CI": 1.85,
+    "PR": 3.35,
+    "AM": 2.47,
+    "IC": 4.0
+   },
+   "de": {
+    "CI": 0.68,
+    "PR": 0.86,
+    "AM": 0.79,
+    "IC": 0.64
+   },
+   "susceptibilidad": 3.0,
+   "efecto": 4.16,
+   "prioridad": 32.5,
+   "rango": 4
+  }
+ ],
+ "dispersion_am_ic": [
+  [
+   4.25,
+   1.25,
+   "TA2"
+  ],
+  [
+   3.0,
+   2.5,
+   "TA1"
+  ],
+  [
+   2.5,
+   4.0,
+   "TA1"
+  ],
+  [
+   2.0,
+   5.0,
+   "TA1"
+  ],
+  [
+   2.0,
+   3.75,
+   "TA3"
+  ],
+  [
+   3.0,
+   3.25,
+   "TA4"
+  ],
+  [
+   2.5,
+   4.0,
+   "TA1"
+  ],
+  [
+   1.75,
+   4.0,
+   "TA3"
+  ],
+  [
+   2.75,
+   3.5,
+   "TA3"
+  ],
+  [
+   2.25,
+   2.75,
+   "TA4"
+  ],
+  [
+   3.5,
+   3.25,
+   "TA2"
+  ],
+  [
+   1.5,
+   4.25,
+   "TA1"
+  ],
+  [
+   1.0,
+   4.25,
+   "TA1"
+  ],
+  [
+   2.0,
+   4.5,
+   "TA4"
+  ],
+  [
+   2.75,
+   3.0,
+   "TA1"
+  ],
+  [
+   3.75,
+   2.75,
+   "TA1"
+  ],
+  [
+   2.5,
+   3.5,
+   "TA3"
+  ],
+  [
+   4.0,
+   1.5,
+   "TA2"
+  ],
+  [
+   3.0,
+   2.75,
+   "TA1"
+  ],
+  [
+   2.75,
+   2.25,
+   "TA4"
+  ],
+  [
+   4.0,
+   3.25,
+   "TA3"
+  ],
+  [
+   3.25,
+   2.0,
+   "TA2"
+  ],
+  [
+   3.25,
+   2.75,
+   "TA1"
+  ],
+  [
+   3.5,
+   2.5,
+   "TA4"
+  ],
+  [
+   3.75,
+   2.75,
+   "TA4"
+  ],
+  [
+   4.0,
+   2.25,
+   "TA2"
+  ],
+  [
+   2.0,
+   2.0,
+   "TA1"
+  ],
+  [
+   1.25,
+   4.5,
+   "TA3"
+  ],
+  [
+   2.75,
+   2.75,
+   "TA4"
+  ],
+  [
+   1.75,
+   5.0,
+   "TA3"
+  ],
+  [
+   3.25,
+   2.0,
+   "TA2"
+  ],
+  [
+   5.0,
+   2.0,
+   "TA2"
+  ],
+  [
+   4.75,
+   2.25,
+   "TA2"
+  ],
+  [
+   3.5,
+   3.25,
+   "TA2"
+  ],
+  [
+   2.75,
+   3.75,
+   "TA3"
+  ],
+  [
+   2.75,
+   4.5,
+   "TA1"
+  ],
+  [
+   4.25,
+   3.25,
+   "TA4"
+  ],
+  [
+   2.75,
+   4.0,
+   "TA3"
+  ],
+  [
+   3.5,
+   1.5,
+   "TA1"
+  ],
+  [
+   3.0,
+   3.25,
+   "TA2"
+  ],
+  [
+   2.0,
+   4.25,
+   "TA4"
+  ],
+  [
+   3.5,
+   2.75,
+   "TA1"
+  ],
+  [
+   3.5,
+   1.0,
+   "TA4"
+  ],
+  [
+   3.75,
+   2.75,
+   "TA2"
+  ],
+  [
+   4.0,
+   4.0,
+   "TA4"
+  ],
+  [
+   2.0,
+   3.25,
+   "TA3"
+  ],
+  [
+   1.0,
+   5.0,
+   "TA3"
+  ],
+  [
+   2.25,
+   3.25,
+   "TA4"
+  ],
+  [
+   2.0,
+   4.75,
+   "TA3"
+  ],
+  [
+   3.0,
+   3.25,
+   "TA4"
+  ],
+  [
+   2.0,
+   4.5,
+   "TA3"
+  ],
+  [
+   2.25,
+   3.75,
+   "TA2"
+  ],
+  [
+   3.25,
+   3.5,
+   "TA2"
+  ],
+  [
+   4.25,
+   1.25,
+   "TA2"
+  ],
+  [
+   3.0,
+   2.75,
+   "TA2"
+  ],
+  [
+   2.5,
+   3.5,
+   "TA1"
+  ],
+  [
+   3.75,
+   3.25,
+   "TA2"
+  ],
+  [
+   3.5,
+   2.75,
+   "TA4"
+  ],
+  [
+   2.5,
+   4.5,
+   "TA3"
+  ],
+  [
+   3.5,
+   2.0,
+   "TA2"
+  ],
+  [
+   3.25,
+   3.25,
+   "TA1"
+  ],
+  [
+   2.5,
+   3.0,
+   "TA3"
+  ],
+  [
+   3.5,
+   1.25,
+   "TA2"
+  ],
+  [
+   2.5,
+   4.0,
+   "TA3"
+  ],
+  [
+   4.5,
+   4.75,
+   "TA3"
+  ],
+  [
+   4.0,
+   3.25,
+   "TA4"
+  ],
+  [
+   2.25,
+   4.0,
+   "TA1"
+  ],
+  [
+   2.0,
+   4.0,
+   "TA3"
+  ],
+  [
+   2.75,
+   4.25,
+   "TA1"
+  ],
+  [
+   3.0,
+   3.25,
+   "TA4"
+  ],
+  [
+   1.0,
+   5.0,
+   "TA3"
+  ],
+  [
+   2.0,
+   3.5,
+   "TA1"
+  ],
+  [
+   2.0,
+   4.5,
+   "TA1"
+  ],
+  [
+   2.25,
+   2.5,
+   "TA4"
+  ],
+  [
+   4.0,
+   2.75,
+   "TA2"
+  ],
+  [
+   3.75,
+   2.0,
+   "TA4"
+  ],
+  [
+   3.25,
+   2.0,
+   "TA4"
+  ],
+  [
+   3.5,
+   3.0,
+   "TA4"
+  ],
+  [
+   2.0,
+   5.0,
+   "TA1"
+  ],
+  [
+   2.75,
+   4.0,
+   "TA3"
+  ],
+  [
+   2.0,
+   4.0,
+   "TA3"
+  ],
+  [
+   2.5,
+   3.75,
+   "TA1"
+  ],
+  [
+   4.25,
+   2.0,
+   "TA2"
+  ],
+  [
+   1.75,
+   4.25,
+   "TA4"
+  ],
+  [
+   3.0,
+   3.0,
+   "TA3"
+  ],
+  [
+   3.25,
+   3.25,
+   "TA3"
+  ],
+  [
+   2.75,
+   3.5,
+   "TA4"
+  ],
+  [
+   2.5,
+   4.5,
+   "TA3"
+  ],
+  [
+   3.75,
+   2.5,
+   "TA1"
+  ],
+  [
+   2.0,
+   4.25,
+   "TA1"
+  ],
+  [
+   2.25,
+   3.5,
+   "TA4"
+  ],
+  [
+   2.25,
+   5.0,
+   "TA1"
+  ],
+  [
+   1.75,
+   3.0,
+   "TA3"
+  ],
+  [
+   3.75,
+   2.25,
+   "TA2"
+  ],
+  [
+   2.75,
+   4.25,
+   "TA1"
+  ],
+  [
+   2.0,
+   3.0,
+   "TA1"
+  ],
+  [
+   1.0,
+   3.5,
+   "TA3"
+  ],
+  [
+   4.0,
+   2.75,
+   "TA3"
+  ],
+  [
+   2.25,
+   3.25,
+   "TA2"
+  ],
+  [
+   2.0,
+   2.5,
+   "TA2"
+  ],
+  [
+   4.75,
+   1.5,
+   "TA2"
+  ],
+  [
+   3.25,
+   3.25,
+   "TA4"
+  ],
+  [
+   4.0,
+   2.0,
+   "TA1"
+  ],
+  [
+   1.5,
+   3.25,
+   "TA1"
+  ],
+  [
+   2.5,
+   4.25,
+   "TA1"
+  ],
+  [
+   3.0,
+   2.5,
+   "TA2"
+  ],
+  [
+   1.5,
+   4.25,
+   "TA3"
+  ],
+  [
+   3.0,
+   3.5,
+   "TA4"
+  ],
+  [
+   1.5,
+   4.75,
+   "TA4"
+  ],
+  [
+   3.75,
+   3.0,
+   "TA2"
+  ],
+  [
+   3.75,
+   3.5,
+   "TA2"
+  ],
+  [
+   3.5,
+   1.0,
+   "TA4"
+  ],
+  [
+   1.75,
+   4.5,
+   "TA3"
+  ],
+  [
+   2.25,
+   3.5,
+   "TA2"
+  ],
+  [
+   1.25,
+   3.75,
+   "TA2"
+  ],
+  [
+   2.0,
+   2.5,
+   "TA4"
+  ],
+  [
+   3.0,
+   3.0,
+   "TA4"
+  ],
+  [
+   3.5,
+   2.75,
+   "TA2"
+  ],
+  [
+   3.5,
+   2.75,
+   "TA1"
+  ],
+  [
+   2.75,
+   4.25,
+   "TA3"
+  ],
+  [
+   4.0,
+   3.25,
+   "TA4"
+  ],
+  [
+   3.25,
+   2.25,
+   "TA2"
+  ],
+  [
+   1.75,
+   4.0,
+   "TA4"
+  ],
+  [
+   3.75,
+   2.75,
+   "TA1"
+  ],
+  [
+   1.25,
+   3.0,
+   "TA1"
+  ],
+  [
+   3.25,
+   3.0,
+   "TA4"
+  ],
+  [
+   3.5,
+   4.0,
+   "TA3"
+  ],
+  [
+   3.5,
+   1.25,
+   "TA2"
+  ],
+  [
+   2.5,
+   3.5,
+   "TA4"
+  ],
+  [
+   2.25,
+   3.0,
+   "TA1"
+  ],
+  [
+   4.25,
+   2.5,
+   "TA2"
+  ],
+  [
+   2.0,
+   4.75,
+   "TA3"
+  ],
+  [
+   1.25,
+   4.75,
+   "TA4"
+  ],
+  [
+   3.0,
+   3.75,
+   "TA3"
+  ],
+  [
+   3.75,
+   2.0,
+   "TA2"
+  ],
+  [
+   2.75,
+   3.0,
+   "TA4"
+  ],
+  [
+   3.75,
+   2.5,
+   "TA2"
+  ],
+  [
+   5.0,
+   2.5,
+   "TA2"
+  ],
+  [
+   2.0,
+   4.5,
+   "TA3"
+  ],
+  [
+   1.0,
+   5.0,
+   "TA3"
+  ],
+  [
+   2.75,
+   4.75,
+   "TA1"
+  ],
+  [
+   3.25,
+   3.25,
+   "TA3"
+  ],
+  [
+   3.5,
+   4.0,
+   "TA3"
+  ],
+  [
+   2.5,
+   2.75,
+   "TA4"
+  ],
+  [
+   4.0,
+   3.5,
+   "TA2"
+  ],
+  [
+   3.75,
+   4.0,
+   "TA1"
+  ],
+  [
+   2.5,
+   4.25,
+   "TA3"
+  ],
+  [
+   3.75,
+   2.75,
+   "TA1"
+  ],
+  [
+   3.0,
+   4.75,
+   "TA1"
+  ],
+  [
+   2.25,
+   5.0,
+   "TA3"
+  ],
+  [
+   3.75,
+   2.0,
+   "TA4"
+  ],
+  [
+   1.75,
+   4.5,
+   "TA4"
+  ],
+  [
+   3.75,
+   4.0,
+   "TA1"
+  ],
+  [
+   1.75,
+   4.25,
+   "TA4"
+  ],
+  [
+   3.25,
+   2.25,
+   "TA4"
+  ],
+  [
+   4.5,
+   2.5,
+   "TA2"
+  ],
+  [
+   1.75,
+   4.75,
+   "TA3"
+  ],
+  [
+   1.75,
+   4.5,
+   "TA3"
+  ],
+  [
+   1.5,
+   5.0,
+   "TA1"
+  ],
+  [
+   3.25,
+   3.25,
+   "TA3"
+  ],
+  [
+   3.25,
+   2.75,
+   "TA2"
+  ],
+  [
+   2.75,
+   2.75,
+   "TA1"
+  ],
+  [
+   3.0,
+   4.75,
+   "TA3"
+  ],
+  [
+   3.75,
+   2.5,
+   "TA2"
+  ],
+  [
+   3.75,
+   3.5,
+   "TA2"
+  ],
+  [
+   5.0,
+   2.0,
+   "TA2"
+  ],
+  [
+   4.25,
+   2.25,
+   "TA2"
+  ],
+  [
+   4.5,
+   3.5,
+   "TA1"
+  ],
+  [
+   1.75,
+   3.5,
+   "TA1"
+  ],
+  [
+   3.25,
+   3.25,
+   "TA3"
+  ],
+  [
+   2.0,
+   5.0,
+   "TA3"
+  ],
+  [
+   2.75,
+   2.0,
+   "TA4"
+  ],
+  [
+   3.75,
+   2.75,
+   "TA4"
+  ],
+  [
+   3.75,
+   2.5,
+   "TA4"
+  ],
+  [
+   2.75,
+   3.25,
+   "TA2"
+  ],
+  [
+   4.0,
+   2.25,
+   "TA4"
+  ],
+  [
+   2.25,
+   4.0,
+   "TA1"
+  ],
+  [
+   1.25,
+   4.25,
+   "TA3"
+  ],
+  [
+   2.25,
+   2.75,
+   "TA4"
+  ],
+  [
+   2.25,
+   3.0,
+   "TA3"
+  ],
+  [
+   1.0,
+   3.0,
+   "TA4"
+  ],
+  [
+   1.75,
+   3.5,
+   "TA1"
+  ],
+  [
+   4.0,
+   5.0,
+   "TA1"
+  ],
+  [
+   2.5,
+   4.5,
+   "TA3"
+  ],
+  [
+   3.0,
+   4.25,
+   "TA3"
+  ],
+  [
+   4.0,
+   3.5,
+   "TA1"
+  ],
+  [
+   1.75,
+   3.75,
+   "TA1"
+  ],
+  [
+   4.25,
+   3.0,
+   "TA2"
+  ],
+  [
+   3.0,
+   4.0,
+   "TA3"
+  ],
+  [
+   1.75,
+   3.0,
+   "TA4"
+  ],
+  [
+   1.25,
+   2.0,
+   "TA4"
+  ],
+  [
+   1.5,
+   4.0,
+   "TA3"
+  ],
+  [
+   3.75,
+   3.5,
+   "TA2"
+  ],
+  [
+   2.25,
+   4.5,
+   "TA3"
+  ],
+  [
+   2.0,
+   3.75,
+   "TA3"
+  ],
+  [
+   2.25,
+   4.25,
+   "TA3"
+  ],
+  [
+   3.0,
+   2.0,
+   "TA2"
+  ],
+  [
+   3.75,
+   3.25,
+   "TA1"
+  ],
+  [
+   4.5,
+   2.25,
+   "TA2"
+  ],
+  [
+   1.5,
+   3.25,
+   "TA3"
+  ],
+  [
+   4.0,
+   2.25,
+   "TA1"
+  ],
+  [
+   4.0,
+   2.0,
+   "TA2"
+  ],
+  [
+   2.5,
+   4.75,
+   "TA3"
+  ],
+  [
+   2.25,
+   3.0,
+   "TA3"
+  ],
+  [
+   4.0,
+   3.0,
+   "TA4"
+  ],
+  [
+   1.5,
+   3.5,
+   "TA1"
+  ],
+  [
+   3.0,
+   4.25,
+   "TA1"
+  ],
+  [
+   3.75,
+   3.75,
+   "TA2"
+  ],
+  [
+   3.0,
+   3.25,
+   "TA3"
+  ],
+  [
+   2.25,
+   4.0,
+   "TA3"
+  ],
+  [
+   3.25,
+   2.75,
+   "TA1"
+  ],
+  [
+   4.25,
+   2.25,
+   "TA2"
+  ],
+  [
+   2.25,
+   4.25,
+   "TA3"
+  ],
+  [
+   2.75,
+   4.75,
+   "TA1"
+  ],
+  [
+   2.25,
+   4.0,
+   "TA3"
+  ],
+  [
+   1.25,
+   3.5,
+   "TA1"
+  ],
+  [
+   3.0,
+   2.5,
+   "TA2"
+  ],
+  [
+   3.25,
+   3.0,
+   "TA4"
+  ],
+  [
+   2.75,
+   2.25,
+   "TA4"
+  ],
+  [
+   2.75,
+   1.5,
+   "TA2"
+  ],
+  [
+   2.25,
+   4.0,
+   "TA3"
+  ],
+  [
+   2.0,
+   3.25,
+   "TA1"
+  ],
+  [
+   2.75,
+   2.5,
+   "TA4"
+  ],
+  [
+   3.25,
+   3.75,
+   "TA1"
+  ],
+  [
+   3.0,
+   3.25,
+   "TA2"
+  ],
+  [
+   4.75,
+   1.5,
+   "TA2"
+  ],
+  [
+   2.25,
+   2.75,
+   "TA4"
+  ],
+  [
+   4.5,
+   1.0,
+   "TA2"
+  ],
+  [
+   2.0,
+   4.25,
+   "TA3"
+  ],
+  [
+   4.75,
+   2.25,
+   "TA2"
+  ],
+  [
+   3.25,
+   4.75,
+   "TA1"
+  ],
+  [
+   3.0,
+   4.0,
+   "TA2"
+  ],
+  [
+   3.5,
+   1.75,
+   "TA2"
+  ],
+  [
+   1.5,
+   5.0,
+   "TA1"
+  ],
+  [
+   4.25,
+   3.0,
+   "TA2"
+  ],
+  [
+   3.5,
+   3.0,
+   "TA2"
+  ],
+  [
+   2.5,
+   2.5,
+   "TA4"
+  ],
+  [
+   2.25,
+   3.75,
+   "TA1"
+  ],
+  [
+   1.75,
+   3.75,
+   "TA3"
+  ],
+  [
+   3.5,
+   4.0,
+   "TA2"
+  ]
+ ]
+}

@@ -1,0 +1,322 @@
+{
+ "estrategias": [
+  {
+   "id": "sin_intervencion",
+   "etiqueta": "Sin intervención (línea base)",
+   "inoculados": [],
+   "alcance_medio_pct": 40.65,
+   "ic95": [
+    22.5,
+    58.33
+   ],
+   "curva": [
+    8.33,
+    17.77,
+    24.47,
+    29.49,
+    33.16,
+    35.85,
+    37.7,
+    38.99,
+    39.81,
+    40.34,
+    40.65
+   ],
+   "reduccion_vs_base_pct": 0.0
+  },
+  {
+   "id": "aleatoria",
+   "etiqueta": "8 cuentas al azar",
+   "inoculados": [
+    "ig_ins_07",
+    "ig_med_06",
+    "ig_med_08",
+    "ig_mem_05",
+    "tt_br_01",
+    "tt_mem_00",
+    "tt_mem_17",
+    "tt_mem_22"
+   ],
+   "alcance_medio_pct": 36.47,
+   "ic95": [
+    19.17,
+    55.0
+   ],
+   "curva": [
+    8.33,
+    16.97,
+    22.91,
+    27.26,
+    30.38,
+    32.62,
+    34.17,
+    35.18,
+    35.84,
+    36.22,
+    36.47
+   ],
+   "reduccion_vs_base_pct": 10.3
+  },
+  {
+   "id": "seguidores",
+   "etiqueta": "8 cuentas con más seguidores",
+   "inoculados": [
+    "ig_br_02",
+    "ig_ins_06",
+    "ig_jov_18",
+    "ig_med_04",
+    "ig_med_05",
+    "ig_vec_11",
+    "tt_jov_14",
+    "tt_mem_04"
+   ],
+   "alcance_medio_pct": 38.47,
+   "ic95": [
+    22.5,
+    55.83
+   ],
+   "curva": [
+    8.33,
+    17.8,
+    24.16,
+    28.95,
+    32.36,
+    34.72,
+    36.27,
+    37.23,
+    37.85,
+    38.22,
+    38.47
+   ],
+   "reduccion_vs_base_pct": 5.4
+  },
+  {
+   "id": "pagerank",
+   "etiqueta": "8 cuentas con mayor PageRank",
+   "inoculados": [
+    "ig_br_04",
+    "ig_jov_18",
+    "ig_med_09",
+    "tt_br_05",
+    "tt_jov_06",
+    "tt_jov_14",
+    "tt_jov_19",
+    "tt_jov_23"
+   ],
+   "alcance_medio_pct": 37.19,
+   "ic95": [
+    20.83,
+    55.0
+   ],
+   "curva": [
+    8.33,
+    17.44,
+    23.64,
+    28.05,
+    31.18,
+    33.39,
+    34.95,
+    36.0,
+    36.63,
+    36.99,
+    37.19
+   ],
+   "reduccion_vs_base_pct": 8.5
+  },
+  {
+   "id": "intermediacion",
+   "etiqueta": "8 puentes (mayor intermediación)",
+   "inoculados": [
+    "ig_br_02",
+    "ig_br_03",
+    "ig_br_04",
+    "ig_med_11",
+    "ig_mem_10",
+    "tt_br_05",
+    "tt_mem_01",
+    "tt_mem_25"
+   ],
+   "alcance_medio_pct": 32.59,
+   "ic95": [
+    19.17,
+    50.0
+   ],
+   "curva": [
+    8.33,
+    16.92,
+    22.13,
+    25.85,
+    28.46,
+    30.12,
+    31.18,
+    31.83,
+    32.22,
+    32.47,
+    32.59
+   ],
+   "reduccion_vs_base_pct": 19.8
+  }
+ ],
+ "semanas": [
+  {
+   "semana": 1,
+   "fase": "base",
+   "narrativa_tratada_pct": 24.5,
+   "narrativa_control_pct": 22.7,
+   "alcance_contramensaje": 0,
+   "verificaciones_calendario": 271,
+   "compras_panico_idx": 100.7
+  },
+  {
+   "semana": 2,
+   "fase": "base",
+   "narrativa_tratada_pct": 25.5,
+   "narrativa_control_pct": 24.4,
+   "alcance_contramensaje": 0,
+   "verificaciones_calendario": 266,
+   "compras_panico_idx": 95.5
+  },
+  {
+   "semana": 3,
+   "fase": "base",
+   "narrativa_tratada_pct": 27.8,
+   "narrativa_control_pct": 25.8,
+   "alcance_contramensaje": 0,
+   "verificaciones_calendario": 236,
+   "compras_panico_idx": 101.5
+  },
+  {
+   "semana": 4,
+   "fase": "base",
+   "narrativa_tratada_pct": 24.5,
+   "narrativa_control_pct": 26.2,
+   "alcance_contramensaje": 0,
+   "verificaciones_calendario": 277,
+   "compras_panico_idx": 98.1
+  },
+  {
+   "semana": 5,
+   "fase": "campaña",
+   "narrativa_tratada_pct": 22.9,
+   "narrativa_control_pct": 23.7,
+   "alcance_contramensaje": 7169,
+   "verificaciones_calendario": 410,
+   "compras_panico_idx": 94.4
+  },
+  {
+   "semana": 6,
+   "fase": "campaña",
+   "narrativa_tratada_pct": 21.8,
+   "narrativa_control_pct": 24.1,
+   "alcance_contramensaje": 10272,
+   "verificaciones_calendario": 403,
+   "compras_panico_idx": 93.4
+  },
+  {
+   "semana": 7,
+   "fase": "campaña",
+   "narrativa_tratada_pct": 19.3,
+   "narrativa_control_pct": 26.4,
+   "alcance_contramensaje": 12898,
+   "verificaciones_calendario": 551,
+   "compras_panico_idx": 85.1
+  },
+  {
+   "semana": 8,
+   "fase": "campaña",
+   "narrativa_tratada_pct": 18.4,
+   "narrativa_control_pct": 26.6,
+   "alcance_contramensaje": 14315,
+   "verificaciones_calendario": 688,
+   "compras_panico_idx": 77.8
+  },
+  {
+   "semana": 9,
+   "fase": "campaña",
+   "narrativa_tratada_pct": 16.8,
+   "narrativa_control_pct": 25.6,
+   "alcance_contramensaje": 16586,
+   "verificaciones_calendario": 753,
+   "compras_panico_idx": 76.0
+  },
+  {
+   "semana": 10,
+   "fase": "campaña",
+   "narrativa_tratada_pct": 13.9,
+   "narrativa_control_pct": 29.2,
+   "alcance_contramensaje": 15634,
+   "verificaciones_calendario": 710,
+   "compras_panico_idx": 63.2
+  },
+  {
+   "semana": 11,
+   "fase": "sostenimiento",
+   "narrativa_tratada_pct": 18.0,
+   "narrativa_control_pct": 28.4,
+   "alcance_contramensaje": 18102,
+   "verificaciones_calendario": 760,
+   "compras_panico_idx": 76.5
+  },
+  {
+   "semana": 12,
+   "fase": "sostenimiento",
+   "narrativa_tratada_pct": 16.7,
+   "narrativa_control_pct": 27.8,
+   "alcance_contramensaje": 17253,
+   "verificaciones_calendario": 654,
+   "compras_panico_idx": 83.4
+  }
+ ],
+ "did": {
+  "pre_tratada": 25.57,
+  "post_tratada": 16.35,
+  "pre_control": 24.77,
+  "post_control": 27.75,
+  "did_pp": -12.2
+ },
+ "mop": [
+  {
+   "indicador": "Piezas publicadas por las voces aliadas",
+   "meta": 120,
+   "logro": 134
+  },
+  {
+   "indicador": "Cuentas puente con prebunking entregado",
+   "meta": 8,
+   "logro": 8
+  },
+  {
+   "indicador": "Alcance acumulado de contramensajes",
+   "meta": 90000,
+   "logro": 112229
+  },
+  {
+   "indicador": "Comerciantes con material de mostrador",
+   "meta": 60,
+   "logro": 47
+  }
+ ],
+ "moe": [
+  {
+   "indicador": "Proporción de publicaciones que reproducen la narrativa (DiD)",
+   "base": 25.57,
+   "final": 16.35,
+   "unidad": "%",
+   "direccion": "baja"
+  },
+  {
+   "indicador": "Índice de compras de pánico (base 100)",
+   "base": 100,
+   "final": 83.4,
+   "unidad": "",
+   "direccion": "baja"
+  },
+  {
+   "indicador": "Consultas semanales al calendario oficial",
+   "base": 271,
+   "final": 654,
+   "unidad": "",
+   "direccion": "sube"
+  }
+ ]
+}

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es-GT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Simulación de campaña y medición de efectos (informe C2IE) · Portafolio</title>
+  <meta name="description" content="Simulación Monte Carlo de estrategias de prebunking sobre una red de TikTok e Instagram, diferencias en diferencias e indicadores MOP/MOE.">
+  <link rel="icon" href="../assets/img/icono.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/estilos.css">
+  <script src="../assets/js/nav.js" defer></script>
+  <script type="module" src="../assets/js/c2ie.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9 16 16 25 8M16 16 10 25M16 16l9 8" opacity=".55"/></g><circle cx="8" cy="9" r="3.2" fill="var(--tiktok)"/><circle cx="25" cy="8" r="2.6" fill="var(--instagram)"/><circle cx="16" cy="16" r="4.2" fill="var(--accent)"/><circle cx="10" cy="25" r="2.6" fill="var(--instagram)"/><circle cx="25" cy="24" r="3" fill="var(--tiktok)"/></svg>
+        <span>Juli0F</span>
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Menú</span>
+        </button>
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="red-influencia.html">Narrativas y redes</a></li>
+          <li><a href="taa.html">Audiencias (TAA)</a></li>
+          <li><a href="c2ie.html" aria-current="page">Informe C2IE</a></li>
+          <li><a href="../index.html#perfil">Perfil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="contenedor">
+        <span class="eyebrow">Proyecto 3 · Evaluación del entorno de información</span>
+        <h1>Simulación de campaña y medición de efectos (informe C2IE)</h1>
+        <p class="lead">Informe con estructura de evaluación del entorno de información. Primero estima, antes de la campaña, qué estrategia reduce más la difusión de la narrativa. Después mide, durante y tras la campaña, si el efecto ocurrió.</p>
+        <div class="ficha" id="kpis"></div>
+        <nav class="indice" aria-label="En esta página">
+          <ol>
+            <li><a href="#resumen">Resumen ejecutivo</a></li>
+            <li><a href="#metodologia">Metodología</a></li>
+            <li><a href="#simulacion">Simulación de estrategias</a></li>
+            <li><a href="#efectos">Medición de efectos (DiD)</a></li>
+            <li><a href="#indicadores">Indicadores MOP y MOE</a></li>
+            <li><a href="#recomendaciones">Recomendaciones</a></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section id="resumen" aria-labelledby="t-resumen">
+      <div class="contenedor prosa">
+        <span class="eyebrow">01 · Contexto y objetivo</span>
+        <h2 id="t-resumen">Resumen ejecutivo</h2>
+        <p id="resumen-texto">Cargando resultados…</p>
+        <div class="aviso"><p><strong>Escenario ficticio.</strong> La simulación usa la red sintética del Proyecto 1. La serie semanal compara una región tratada (área metropolitana de Guatemala) con una región de control (Quetzaltenango). Las cifras son sintéticas y no describen mediciones reales en esos municipios.</p></div>
+      </div>
+    </section>
+
+    <section id="metodologia" aria-labelledby="t-metodologia">
+      <div class="contenedor">
+        <span class="eyebrow">02 · Metodología</span>
+        <h2 id="t-metodologia">Diseño de la evaluación</h2>
+        <ol class="pasos">
+          <li><strong>Modelo de difusión</strong> Cascada independiente sobre la red del Proyecto 1. La probabilidad de contagio crece con el peso de la interacción (1 − e<sup>−0,06·w</sup>).</li>
+          <li><strong>Intervención</strong> Presupuesto de 8 cuentas. Una cuenta intervenida rechaza la narrativa en el 75 % de los intentos y no la retransmite.</li>
+          <li><strong>Estrategias</strong> Línea base, 8 al azar, 8 con más seguidores, 8 con mayor PageRank y 8 puentes (mayor intermediación).</li>
+          <li><strong>Monte Carlo</strong> 600 corridas por estrategia, siempre desde el mismo núcleo emisor. Se reporta el alcance medio y su intervalo del 95 %.</li>
+          <li><strong>Medición en campo</strong> Serie de 12 semanas (4 de base, 6 de campaña y 2 de sostenimiento) con región de control. El efecto se estima con diferencias en diferencias.</li>
+          <li><strong>Indicadores</strong> MOP: ¿se hizo lo planificado? MOE: ¿cambió la conducta de la audiencia?</li>
+        </ol>
+        <p class="muted" style="margin-block-start:1rem">Archivos: <a href="../analisis/taa_c2ie.py">analisis/taa_c2ie.py</a> · <a href="../data/c2ie.json">data/c2ie.json</a></p>
+      </div>
+    </section>
+
+    <section id="simulacion" aria-labelledby="t-simulacion">
+      <div class="contenedor">
+        <span class="eyebrow">03 · Evaluación previa</span>
+        <h2 id="t-simulacion">Simulación de estrategias</h2>
+        <div class="dos-col">
+          <figure class="panel grafico">
+            <h3>Alcance final de la narrativa (% de la red)</h3>
+            <div id="g-alcance"></div>
+            <figcaption>Media de 600 corridas por estrategia. Cuanto menor, mejor.</figcaption>
+          </figure>
+          <figure class="panel grafico">
+            <h3>Curva de difusión por estrategia</h3>
+            <div id="g-curvas"></div>
+            <figcaption>Porcentaje acumulado de cuentas alcanzadas en cada ciclo de difusión.</figcaption>
+          </figure>
+        </div>
+        <div class="tabla-scroll" style="margin-block-start:1.5rem">
+          <table id="tabla-estrategias">
+            <caption>Comparación de estrategias</caption>
+            <thead><tr><th>Estrategia</th><th class="num">Alcance medio</th><th class="num">IC 95 %</th><th class="num">Reducción vs. base</th><th>Cuentas intervenidas</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="prosa" style="margin-block-start:1.5rem">
+          <h3>Lectura</h3>
+          <p>Elegir a las cuentas con más seguidores es la peor estrategia: rinde menos que elegir al azar. Esas cuentas suelen estar dentro de comunidades que ya resisten la narrativa. Las cuentas con mayor PageRank tampoco destacan, porque varias son receptoras finales y no retransmiten. <strong>Intervenir sobre los puentes casi duplica el efecto del azar</strong>, ya que corta los caminos entre el núcleo emisor y las zonas de contagio.</p>
+          <p>«Intervenir» no significa lo mismo para todas las cuentas. Con los puentes aliados o neutrales significa alianza y prebunking. Con los puentes que reproducen la narrativa significa prebunking dirigido a su audiencia, para que esta no retransmita, y documentar el comportamiento coordinado según las normas de la plataforma.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="efectos" aria-labelledby="t-efectos">
+      <div class="contenedor">
+        <span class="eyebrow">04 · Medición de efectos</span>
+        <h2 id="t-efectos">Diferencias en diferencias</h2>
+        <div class="dos-col">
+          <figure class="panel grafico">
+            <h3>Publicaciones que reproducen la narrativa (%)</h3>
+            <div id="g-did"></div>
+            <figcaption>Región tratada (área metropolitana) frente a región de control (Quetzaltenango). Zona sombreada: semanas de campaña.</figcaption>
+          </figure>
+          <div>
+            <div class="tabla-scroll">
+              <table id="tabla-did">
+                <caption>Estimación DiD (pre: semanas 1-4 · post: semanas 9-12)</caption>
+                <thead><tr><th>Región</th><th class="num">Pre</th><th class="num">Post</th><th class="num">Cambio</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <p class="prosa" id="did-texto" style="margin-block-start:1rem"></p>
+          </div>
+        </div>
+        <figure class="panel grafico" style="margin-block-start:1.5rem">
+          <h3>Conducta observable: compras de pánico y consultas al calendario oficial</h3>
+          <div id="g-conducta"></div>
+          <figcaption>Índice de compras de pánico (base 100 en la semana 1) y consultas al calendario (escaladas ÷ 10 para compartir eje).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="indicadores" aria-labelledby="t-indicadores">
+      <div class="contenedor">
+        <span class="eyebrow">05 · Indicadores</span>
+        <h2 id="t-indicadores">Medidas de desempeño (MOP) y de efectividad (MOE)</h2>
+        <div class="dos-col">
+          <div class="tabla-scroll">
+            <table id="tabla-mop">
+              <caption>MOP: ¿se ejecutó lo planificado?</caption>
+              <thead><tr><th>Indicador</th><th class="num">Meta</th><th class="num">Logro</th><th class="num">%</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="tabla-scroll">
+            <table id="tabla-moe">
+              <caption>MOE: ¿cambió la conducta?</caption>
+              <thead><tr><th>Indicador</th><th class="num">Base</th><th class="num">Final</th><th>Resultado</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recomendaciones" aria-labelledby="t-recomendaciones">
+      <div class="contenedor">
+        <span class="eyebrow">06 · Recomendación</span>
+        <h2 id="t-recomendaciones">¿A quién dirigirse y qué acción tomar?</h2>
+        <div class="recomendacion">
+          <h3>Recomendaciones para el equipo de liderazgo</h3>
+          <ol>
+            <li><strong>Priorizar los puentes en el presupuesto de alcance.</strong> Con el mismo número de cuentas, dirigirse a los puentes reduce el alcance de la narrativa unas cuatro veces más que dirigirse a las cuentas con más seguidores.</li>
+            <li><strong>Mantener la campaña en TA1 y TA4 durante el sostenimiento.</strong> El efecto se mantiene en las semanas 11 y 12, pero la región de control muestra que la narrativa sigue creciendo de forma orgánica. Si la campaña se detiene, es probable que el efecto se pierda.</li>
+            <li><strong>Corregir el MOP rezagado.</strong> La distribución de material a comerciantes quedó por debajo de la meta. Es la palanca más directa sobre las compras de pánico.</li>
+            <li><strong>Institucionalizar la medición.</strong> Mantener una región de control y el mismo tablero semanal para la próxima narrativa. Así el efecto se atribuye a la campaña y no a la tendencia general.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="t-limitaciones">
+      <div class="contenedor prosa">
+        <span class="eyebrow">07 · Limitaciones</span>
+        <h2 id="t-limitaciones">Limitaciones</h2>
+        <ul>
+          <li>La cascada independiente supone una sola exposición efectiva. Los modelos de umbral, que exigen varias exposiciones, pueden cambiar el orden de las estrategias.</li>
+          <li>La eficacia del prebunking (75 %) es un supuesto. Debe calibrarse con un experimento A/B o con literatura sobre inoculación.</li>
+          <li>El DiD supone tendencias paralelas antes de la campaña. En la serie se verifican visualmente en las semanas 1 a 4. Con datos reales conviene un estudio de eventos.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="contenedor">
+      <span><a href="taa.html">← Audiencias (TAA)</a></span>
+      <span><a href="../index.html">Volver al inicio</a></span>
+    </div>
+  </footer>
+</body>
+</html>

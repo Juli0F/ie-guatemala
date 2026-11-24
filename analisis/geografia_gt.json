@@ -1,0 +1,31 @@
+{
+  "descripcion": "Nomenclátor para geolocalizar publicaciones a nivel de departamento. 'alias' son topónimos (cabecera, municipios y lugares conocidos) que identifican el departamento sin ambigüedad. Se omitieron nombres que también son palabras comunes o apellidos (p. ej. Flores, Morales, Monjas) o que se repiten en otros departamentos (p. ej. San Pedro Sacatepéquez). 'col' y 'fila' ubican el departamento en el mapa de cuadrícula.",
+  "nacional": ["guatemala", "guate", "guatemaltecos", "chapines", "todo el pais", "a nivel nacional"],
+  "patrones_departamento": {
+    "guatemala": ["\\bzona ([1-9]|1[0-9]|2[0-5])\\b"]
+  },
+  "departamentos": [
+    {"id": "peten", "nombre": "Petén", "col": 3, "fila": 0, "alias": ["Petén", "San Benito", "Santa Elena Petén", "Isla de Flores", "Sayaxché", "Poptún", "Melchor de Mencos", "Tikal", "Las Cruces Petén", "Laguna del Tigre"]},
+    {"id": "huehuetenango", "nombre": "Huehuetenango", "col": 1, "fila": 1, "alias": ["Huehuetenango", "Huehue", "La Mesilla", "Barillas", "Jacaltenango", "Chiantla", "Todos Santos Cuchumatán", "Nentón", "Soloma", "Cuchumatanes"]},
+    {"id": "quiche", "nombre": "Quiché", "col": 2, "fila": 1, "alias": ["Quiché", "Santa Cruz del Quiché", "Chichicastenango", "Chichi", "Nebaj", "Ixcán", "Uspantán", "Joyabaj", "Sacapulas"]},
+    {"id": "alta_verapaz", "nombre": "Alta Verapaz", "col": 3, "fila": 1, "alias": ["Alta Verapaz", "Cobán", "San Pedro Carchá", "Carchá", "Chisec", "Fray Bartolomé de las Casas", "Panzós", "Tactic", "Senahú", "Raxruhá", "Lanquín", "Semuc Champey"]},
+    {"id": "izabal", "nombre": "Izabal", "col": 4, "fila": 1, "alias": ["Izabal", "Puerto Barrios", "Livingston", "El Estor", "Los Amates", "Río Dulce", "Lago de Izabal"]},
+    {"id": "san_marcos", "nombre": "San Marcos", "col": 0, "fila": 2, "alias": ["San Marcos", "Malacatán", "Tecún Umán", "Ayutla", "Ixchiguán", "Tejutla", "Catarina San Marcos"]},
+    {"id": "quetzaltenango", "nombre": "Quetzaltenango", "col": 1, "fila": 2, "alias": ["Quetzaltenango", "Xela", "Xelajú", "Coatepeque", "Salcajá", "Cantel", "Almolonga", "Zunil", "Olintepeque", "San Juan Ostuncalco"]},
+    {"id": "totonicapan", "nombre": "Totonicapán", "col": 2, "fila": 2, "alias": ["Totonicapán", "Toto", "Momostenango", "San Cristóbal Totonicapán", "San Francisco El Alto"]},
+    {"id": "baja_verapaz", "nombre": "Baja Verapaz", "col": 3, "fila": 2, "alias": ["Baja Verapaz", "Salamá", "Rabinal", "Cubulco", "Purulhá"]},
+    {"id": "el_progreso", "nombre": "El Progreso", "col": 4, "fila": 2, "alias": ["El Progreso Guastatoya", "Guastatoya", "Sanarate", "San Agustín Acasaguastlán"]},
+    {"id": "zacapa", "nombre": "Zacapa", "col": 5, "fila": 2, "alias": ["Zacapa", "Gualán", "Teculután", "Estanzuela", "Río Hondo"]},
+    {"id": "retalhuleu", "nombre": "Retalhuleu", "col": 0, "fila": 3, "alias": ["Retalhuleu", "Reu", "Champerico", "El Asintal"]},
+    {"id": "solola", "nombre": "Sololá", "col": 1, "fila": 3, "alias": ["Sololá", "Panajachel", "Santiago Atitlán", "San Pedro La Laguna", "San Lucas Tolimán", "Nahualá"]},
+    {"id": "chimaltenango", "nombre": "Chimaltenango", "col": 2, "fila": 3, "alias": ["Chimaltenango", "Chimal", "Tecpán", "Patzún", "Patzicía", "Comalapa", "El Tejar", "Acatenango"]},
+    {"id": "guatemala", "nombre": "Guatemala", "col": 3, "fila": 3, "alias": ["Ciudad de Guatemala", "la capital", "Mixco", "Villa Nueva", "San Miguel Petapa", "Villa Canales", "Amatitlán", "Chinautla", "San José Pinula", "Santa Catarina Pinula", "Fraijanes", "San Juan Sacatepéquez", "San Pedro Ayampuc", "Palencia"]},
+    {"id": "jalapa", "nombre": "Jalapa", "col": 4, "fila": 3, "alias": ["Jalapa Guatemala", "San Pedro Pinula", "Mataquescuintla", "San Luis Jilotepeque"]},
+    {"id": "chiquimula", "nombre": "Chiquimula", "col": 5, "fila": 3, "alias": ["Chiquimula", "Esquipulas", "Jocotán", "Camotán", "Olopa"]},
+    {"id": "suchitepequez", "nombre": "Suchitepéquez", "col": 1, "fila": 4, "alias": ["Suchitepéquez", "Mazatenango", "Mazate", "Chicacao", "Cuyotenango", "Patulul"]},
+    {"id": "sacatepequez", "nombre": "Sacatepéquez", "col": 2, "fila": 4, "alias": ["Antigua Guatemala", "La Antigua", "Ciudad Vieja", "Jocotenango", "Sumpango", "Alotenango", "San Lucas Sacatepéquez"]},
+    {"id": "santa_rosa", "nombre": "Santa Rosa", "col": 3, "fila": 4, "alias": ["Cuilapa", "Barberena", "Chiquimulilla", "Taxisco", "Monterrico", "Pueblo Nuevo Viñas"]},
+    {"id": "jutiapa", "nombre": "Jutiapa", "col": 4, "fila": 4, "alias": ["Jutiapa", "Asunción Mita", "Jalpatagua", "Moyuta", "Pedro de Alvarado", "Atescatempa"]},
+    {"id": "escuintla", "nombre": "Escuintla", "col": 2, "fila": 5, "alias": ["Escuintla", "Puerto San José", "Santa Lucía Cotzumalguapa", "Palín", "Masagua", "Tiquisate", "La Gomera", "Puerto Quetzal"]}
+  ]
+}

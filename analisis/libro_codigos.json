@@ -1,0 +1,148 @@
+{
+  "version": "1.0",
+  "fecha": "2026-11-24",
+  "descripcion": "Libro de códigos para clasificar publicaciones de TikTok e Instagram en Guatemala por tema y subnarrativa. La clasificación indica de qué habla una publicación, no si lo que afirma es verdadero ni qué postura toma. La postura y la veracidad se codifican a mano en una muestra.",
+  "reglas": {
+    "normalizacion": "Minúsculas, sin tildes, signos reemplazados por espacios. Los hashtags se comparan sin '#'.",
+    "pesos": "Palabra suelta = 1; frase de 2 o más palabras = 2; hashtag = 2.",
+    "umbral_tema": 2,
+    "multietiqueta": "Una publicación puede pertenecer a varios temas (p. ej. narcopolítica y política).",
+    "validacion": "Codificar a mano una muestra aleatoria (mín. 200 publicaciones) con dos codificadores; reportar kappa de Cohen y precisión/sensibilidad del diccionario por tema."
+  },
+  "temas": [
+    {
+      "id": "agua",
+      "etiqueta": "Agua",
+      "descripcion": "Acceso, escasez, gestión, contaminación y regulación del agua.",
+      "consulta": ["escasez de agua", "cortes de agua", "sin agua", "ley de aguas", "río Motagua", "Amatitlán", "camiones cisterna", "Empagua"],
+      "excluir": ["agua de coco", "agua de jamaica", "agua de horchata", "agua mineral", "bajo el agua", "agua bendita", "romper aguas"],
+      "subnarrativas": [
+        {
+          "id": "agua_escasez",
+          "etiqueta": "Escasez y cortes de servicio",
+          "marco": "No hay agua y nadie responde; hay que almacenar.",
+          "terminos": ["sin agua", "no hay agua", "no cae agua", "corte de agua", "cortes de agua", "racionamiento", "escasez de agua", "camion cisterna", "camiones cisterna", "cisterna", "toneles", "tonel", "pila vacia", "sequia", "pozo seco"],
+          "hashtags": ["sinagua", "cortesdeagua", "queremosagua", "aguayaa"]
+        },
+        {
+          "id": "agua_privatizacion",
+          "etiqueta": "Ley de aguas y privatización",
+          "marco": "Quieren privatizar el agua / el agua es un derecho.",
+          "terminos": ["ley de aguas", "privatizacion del agua", "privatizar el agua", "agua es un derecho", "derecho al agua", "desvio de rios", "hidroelectrica", "hidroelectricas"],
+          "hashtags": ["leydeaguas", "elaguanosevende", "aguaesvida"]
+        },
+        {
+          "id": "agua_contaminacion",
+          "etiqueta": "Contaminación de ríos y lagos",
+          "marco": "Los ríos y lagos se mueren y nadie hace nada.",
+          "terminos": ["rio motagua", "motagua", "lago de amatitlan", "lago de atitlan", "rio las vacas", "agua contaminada", "contaminacion del agua", "aguas residuales", "cianobacteria", "basura en el rio", "planta de tratamiento"],
+          "hashtags": ["salvemoselmotagua", "atitlan", "amatitlan"]
+        },
+        {
+          "id": "agua_gestion",
+          "etiqueta": "Gestión municipal y tarifas",
+          "marco": "La municipalidad cobra pero no da el servicio.",
+          "terminos": ["empagua", "tarifa de agua", "recibo del agua", "contador de agua", "servicio de agua", "tuberia rota", "fuga de agua", "agua potable"],
+          "hashtags": ["empagua"]
+        }
+      ]
+    },
+    {
+      "id": "politica",
+      "etiqueta": "Política",
+      "descripcion": "Elecciones, Congreso, partidos y crisis institucionales.",
+      "consulta": ["Congreso", "diputados", "Tribunal Supremo Electoral", "elecciones", "golpe de Estado", "Corte de Constitucionalidad"],
+      "excluir": [],
+      "subnarrativas": [
+        {
+          "id": "pol_elecciones",
+          "etiqueta": "Elecciones y fraude",
+          "marco": "El proceso electoral fue limpio / fue manipulado.",
+          "terminos": ["elecciones", "eleccion", "tse", "tribunal supremo electoral", "fraude electoral", "fraude en las elecciones", "actas", "segunda vuelta", "padron electoral", "candidato", "candidata", "partido politico", "votos", "votar"],
+          "hashtags": ["elecciones", "fraudeelectoral", "tse", "guatevota"]
+        },
+        {
+          "id": "pol_congreso",
+          "etiqueta": "Congreso y diputados",
+          "marco": "Los diputados legislan para sí mismos.",
+          "terminos": ["congreso", "diputados", "diputado", "diputada", "bancada", "iniciativa de ley", "presupuesto general", "aprobaron el presupuesto", "sesion del congreso", "junta directiva del congreso"],
+          "hashtags": ["congresogt", "presupuesto", "diputados"]
+        },
+        {
+          "id": "pol_ruptura",
+          "etiqueta": "Ruptura institucional y persecución",
+          "marco": "Se está dando un golpe / se defiende el Estado de derecho.",
+          "terminos": ["golpe de estado", "golpe tecnico", "persecucion politica", "criminalizacion", "criminalizacion de lideres", "lideres comunitarios", "lawfare", "estado de derecho", "corte de constitucionalidad", "orden constitucional", "democracia en riesgo"],
+          "hashtags": ["golpedeestado", "renunciaya", "defendamoslademocracia"]
+        }
+      ]
+    },
+    {
+      "id": "narcopolitica",
+      "etiqueta": "Narcopolítica",
+      "descripcion": "Vínculos entre narcotráfico, financiamiento político y autoridades.",
+      "consulta": ["narcotráfico", "narcopolítica", "lavado de dinero", "extradición", "pista clandestina", "financiamiento ilícito"],
+      "excluir": ["narcos de netflix", "serie narcos"],
+      "subnarrativas": [
+        {
+          "id": "narco_financiamiento",
+          "etiqueta": "Financiamiento y captura política",
+          "marco": "El narco financia campañas y pone autoridades.",
+          "terminos": ["narcopolitica", "narcodiputado", "narcodiputados", "narcoalcalde", "narcoalcaldes", "financiamiento ilicito", "financiamiento electoral ilicito", "dinero del narco", "narcofinanciamiento", "lavado de dinero"],
+          "hashtags": ["narcopolitica", "narcoestado", "narcodiputados"]
+        },
+        {
+          "id": "narco_territorio",
+          "etiqueta": "Tráfico y control territorial",
+          "marco": "Hay zonas del país controladas por estructuras de narcotráfico.",
+          "terminos": ["narcotrafico", "narcotraficante", "narcotraficantes", "narco", "cartel", "pista clandestina", "pistas clandestinas", "narcoavioneta", "narcoavionetas", "cocaina", "decomiso", "cargamento", "ruta de la droga"],
+          "hashtags": ["narcotrafico", "narco"]
+        },
+        {
+          "id": "narco_extradicion",
+          "etiqueta": "Extradiciones e impunidad",
+          "marco": "Los capturados en el extranjero revelan quiénes los protegían aquí.",
+          "terminos": ["extradicion", "extradiciones", "extraditado", "extraditados", "pedido de extradicion", "cortes de estados unidos", "estructura criminal", "vinculos con el narco"],
+          "hashtags": ["extradicion"]
+        }
+      ]
+    },
+    {
+      "id": "estado",
+      "etiqueta": "Estado",
+      "descripcion": "Corrupción, justicia, servicios públicos y seguridad.",
+      "consulta": ["corrupción", "Ministerio Público", "fiscal general", "extorsión", "hospitales", "carreteras"],
+      "excluir": [],
+      "subnarrativas": [
+        {
+          "id": "est_corrupcion",
+          "etiqueta": "Corrupción",
+          "marco": "El Estado está capturado por redes de corrupción.",
+          "terminos": ["corrupcion", "corrupto", "corruptos", "pacto de corruptos", "plazas fantasma", "soborno", "sobornos", "malversacion", "sobrevaloracion", "contraloria", "obra fantasma"],
+          "hashtags": ["pactodecorruptos", "corrupcion", "noalacorrupcion"]
+        },
+        {
+          "id": "est_justicia",
+          "etiqueta": "Justicia y Ministerio Público",
+          "marco": "El sistema de justicia persigue / protege a quien no debe.",
+          "terminos": ["ministerio publico", "mp", "fiscal general", "fiscalia", "feci", "cicig", "jueces", "juez", "jueza", "exilio", "exiliados", "periodista preso", "periodistas presos", "orden de captura"],
+          "hashtags": ["fiscalgeneral", "mp", "justiciagt"]
+        },
+        {
+          "id": "est_servicios",
+          "etiqueta": "Servicios públicos",
+          "marco": "El Estado no cumple: hospitales, carreteras, escuelas.",
+          "terminos": ["hospital", "hospitales", "medicinas", "igss", "centro de salud", "carretera", "carreteras", "hoyos", "baches", "libramiento", "puente colapsado", "escuela", "escuelas", "maestros"],
+          "hashtags": ["carreterasgt", "sinmedicinas", "igss"]
+        },
+        {
+          "id": "est_seguridad",
+          "etiqueta": "Seguridad y extorsión",
+          "marco": "El Estado perdió el control frente a pandillas y extorsión.",
+          "terminos": ["extorsion", "extorsiones", "extorsionistas", "maras", "pandillas", "pandilleros", "pnc", "policia nacional civil", "estado de prevencion", "estado de sitio", "fuga de reos", "carcel", "sistema penitenciario"],
+          "hashtags": ["extorsion", "seguridadgt", "pnc"]
+        }
+      ]
+    }
+  ]
+}

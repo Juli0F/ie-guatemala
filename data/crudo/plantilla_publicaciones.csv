@@ -1,0 +1,3 @@
+id_publicacion,plataforma,fecha,cuenta,tipo_cuenta,seguidores,bio_ubicacion,texto,hashtags,transcripcion,ubicacion_etiquetada,interaccion,cuenta_objetivo,menciones,vistas,me_gusta,comentarios,compartidos
+tt_0001,tiktok,2026-10-05,@cuenta_ejemplo,ciudadano,1520,Mixco,"Ya van cinco días sin agua en la colonia y el camión cisterna no llega",#SinAgua #Mixco,"(texto del audio transcrito, opcional)",,original,,,15200,830,64,121
+ig_0002,instagram,2026-10-06,@otra_cuenta,medio,48000,Ciudad de Guatemala,"Reportan cortes de agua en varias zonas de la capital",#CortesDeAgua,,Zona 18,repost,@cuenta_ejemplo,@cuenta_institucional,9800,412,37,55

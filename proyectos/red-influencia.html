@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es-GT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Narrativas, territorio y redes de influencia en Guatemala · Portafolio</title>
+  <meta name="description" content="Qué se dice en TikTok, Instagram y X sobre agua, política, narcopolítica y Estado en Guatemala, en qué departamento y qué cuentas lo difunden.">
+  <link rel="icon" href="../assets/img/icono.svg" type="image/svg+xml">
+  <link rel="preload" href="../data/narrativas.json" as="fetch" crossorigin>
+  <link rel="stylesheet" href="../assets/css/estilos.css">
+  <script src="../assets/js/nav.js" defer></script>
+  <script type="module" src="../assets/js/narrativas.js"></script>
+  <script type="module" src="../assets/js/tiempo_real.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9 16 16 25 8M16 16 10 25M16 16l9 8" opacity=".55"/></g><circle cx="8" cy="9" r="3.2" fill="var(--tiktok)"/><circle cx="25" cy="8" r="2.6" fill="var(--instagram)"/><circle cx="16" cy="16" r="4.2" fill="var(--accent)"/><circle cx="10" cy="25" r="2.6" fill="var(--instagram)"/><circle cx="25" cy="24" r="3" fill="var(--tiktok)"/></svg>
+        <span>Juli0F</span>
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Menú</span>
+        </button>
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="red-influencia.html" aria-current="page">Narrativas y redes</a></li>
+          <li><a href="../index.html#perfil">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="contenedor">
+        <span class="eyebrow">Proyecto principal · Guatemala</span>
+        <h1>¿Qué se dice en redes, dónde y quién lo difunde?</h1>
+        <p class="lead">Publicaciones de TikTok, Instagram y X sobre <strong>agua</strong>, <strong>política</strong>, <strong>narcopolítica</strong> y <strong>Estado</strong>, ordenadas por departamento.</p>
+        <div class="aviso" id="aviso-fuente"><p>Cargando datos…</p></div>
+        <ol class="pasos">
+          <li><strong>Elige un tema</strong> Agua, política, narcopolítica o Estado.</li>
+          <li><strong>Elige un lugar</strong> Todo el país o un departamento. También puedes tocar el mapa.</li>
+          <li><strong>Lee el resultado</strong> Qué se dice, dónde crece y qué cuentas lo difunden.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="explorador" aria-labelledby="t-explorador">
+      <div class="contenedor">
+        <span class="eyebrow">01 · Explorar</span>
+        <h2 id="t-explorador">Explorador</h2>
+
+        <form class="filtros" id="filtros" aria-label="Filtros del explorador" onsubmit="return false">
+          <fieldset class="segmentado">
+            <legend>Tema</legend>
+            <div id="opciones-tema"></div>
+          </fieldset>
+          <label class="campo">
+            <span>Territorio</span>
+            <select name="depto" id="sel-depto"></select>
+          </label>
+          <button type="button" class="enlace-filtro" id="copiar-enlace">Copiar enlace</button>
+        </form>
+
+        <div class="ficha" id="kpis" aria-live="polite"></div>
+
+        <div class="dos-col" style="margin-block-start:1.5rem">
+          <figure class="panel">
+            <h3>Publicaciones por departamento</h3>
+            <div class="mapa-gt" id="mapa-gt" role="group" aria-label="Mapa de Guatemala por departamento. Selecciona un departamento para filtrar."></div>
+            <figcaption id="cap-mapa">Más oscuro = más publicaciones. Toca un departamento para verlo; tócalo otra vez para volver a todo el país.</figcaption>
+          </figure>
+          <figure class="panel grafico">
+            <h3 id="t-tendencia">Cada semana</h3>
+            <div id="g-tendencia"></div>
+            <figcaption id="cap-tendencia"></figcaption>
+          </figure>
+        </div>
+
+        <div class="lectura" id="lectura" aria-live="polite"></div>
+
+        <h3 style="margin-block:2rem 0.75rem">¿Quién lo difunde?</h3>
+        <p class="muted">Cada figura es una cuenta y cada línea, una respuesta, cita o mención entre dos cuentas. Más grande = más influyente. Toca una cuenta para ver sus datos.</p>
+        <div class="grafo-layout">
+          <div>
+            <div class="grafo-lienzo" id="lienzo">
+              <canvas id="grafo" role="img" aria-label="Grafo de interacciones de la vista seleccionada. Las tablas siguientes contienen los mismos datos."></canvas>
+              <div class="tooltip" id="tooltip" hidden></div>
+              <p class="grafo-vacio" id="grafo-vacio" hidden>No hay suficientes interacciones para construir una red con este filtro.</p>
+            </div>
+            <ul class="leyenda" id="leyenda" aria-label="Leyenda"></ul>
+          </div>
+          <form class="controles" id="controles" onsubmit="return false">
+            <fieldset>
+              <legend>Color</legend>
+              <label><input type="radio" name="color" value="comunidad" checked> Grupo</label>
+              <label><input type="radio" name="color" value="tema"> Tema</label>
+              <label><input type="radio" name="color" value="tipo"> Tipo de cuenta</label>
+            </fieldset>
+            <fieldset>
+              <legend>Tamaño según</legend>
+              <select name="tamano" aria-label="Qué indica el tamaño de cada cuenta">
+                <option value="pr">Influencia</option>
+                <option value="bt">Conecta grupos</option>
+                <option value="gr">Número de contactos</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Plataforma</legend>
+              <label><input type="checkbox" name="plataforma" value="tiktok" checked> TikTok</label>
+              <label><input type="checkbox" name="plataforma" value="instagram" checked> Instagram</label>
+              <label><input type="checkbox" name="plataforma" value="x" checked> X</label>
+            </fieldset>
+            <fieldset>
+              <legend>Buscar cuenta</legend>
+              <input type="search" name="buscar" placeholder="nombre de la cuenta" aria-label="Buscar cuenta por identificador" list="lista-cuentas">
+              <datalist id="lista-cuentas"></datalist>
+            </fieldset>
+            <div class="grafo-botones">
+              <button type="button" data-zoom="1.25" aria-label="Acercar">＋ Zoom</button>
+              <button type="button" data-zoom="0.8" aria-label="Alejar">− Zoom</button>
+              <button type="button" data-reset>Centrar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="dos-col" style="margin-block-start:1.5rem">
+          <div class="tabla-scroll">
+            <table id="tabla-pagerank">
+              <caption>Cuentas más influyentes</caption>
+              <thead><tr><th>Cuenta</th><th>Tipo</th><th>Lugar</th><th class="num">Influencia</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="tabla-scroll">
+            <table id="tabla-intermediacion">
+              <caption>Cuentas puente (conectan grupos distintos)</caption>
+              <thead><tr><th>Cuenta</th><th>Tipo</th><th>Lugar</th><th class="num">Puente</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dos-col" style="margin-block-start:1.5rem">
+          <div class="tabla-scroll">
+            <table id="tabla-subnarrativas">
+              <caption>¿Qué se dice?</caption>
+              <thead><tr><th>Asunto</th><th>Idea que se repite</th><th class="num">Publ.</th><th class="num">%</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="tabla-scroll">
+            <table id="tabla-comunidades">
+              <caption>Grupos que conversan entre sí</caption>
+              <thead><tr><th>Grupo</th><th class="num">Cuentas</th><th>Redes</th><th>Tema</th><th>Lugar</th><th>Cuenta principal</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tiempo-real" aria-labelledby="t-tiempo-real">
+      <div class="contenedor">
+        <span class="eyebrow">02 · En vivo</span>
+        <h2 id="t-tiempo-real">Buscar en vivo</h2>
+        <p class="lead">Busca publicaciones y noticias de los últimos días con el tema y el lugar que elegiste arriba.</p>
+        <div id="tr-no-disponible" class="aviso">
+          <p><strong>Solo funciona en tu computadora.</strong> Las instrucciones están en <a href="#como-se-hizo">Cómo se hizo</a>.</p>
+        </div>
+        <form class="filtros" id="tr-form" hidden onsubmit="return false">
+          <label class="campo"><span>Fuente</span>
+            <select name="fuente">
+              <option value="gdelt">Noticias</option>
+              <option value="tiktok">TikTok</option>
+              <option value="x">X (de pago)</option>
+            </select>
+          </label>
+          <label class="campo"><span>Periodo</span>
+            <select name="periodo">
+              <option value="24h">Últimas 24 horas</option>
+              <option value="3d" selected>Últimos 3 días</option>
+              <option value="7d">Últimos 7 días</option>
+              <option value="30d">Últimos 30 días</option>
+            </select>
+          </label>
+          <label class="campo"><span>Palabras (opcional)</span>
+            <input type="search" name="q" maxlength="120" placeholder="vacío = palabras del tema">
+          </label>
+          <button type="submit" class="btn primario" id="tr-buscar">Buscar ahora</button>
+          <p class="muted tr-filtro" id="tr-filtro"></p>
+        </form>
+        <p id="tr-estado" class="muted" role="status" aria-live="polite"></p>
+        <div id="tr-resumen" class="dos-col" hidden>
+          <div class="panel"><h3>Por tema</h3><ul class="chips" id="tr-temas"></ul></div>
+          <div class="panel"><h3>Por departamento</h3><ul class="chips" id="tr-deptos"></ul></div>
+        </div>
+        <div class="grafo-botones" id="tr-acciones" hidden style="margin-block:1rem">
+          <button type="button" id="tr-guardar">Agregar estos resultados al explorador</button>
+        </div>
+        <ol class="tr-lista" id="tr-lista"></ol>
+      </div>
+    </section>
+
+    <section id="recomendaciones" aria-labelledby="t-recomendaciones">
+      <div class="contenedor">
+        <span class="eyebrow">03 · Qué hacer</span>
+        <h2 id="t-recomendaciones">¿Qué hacer con esto?</h2>
+        <p class="lead">Sugerencias automáticas para el tema y el lugar elegidos. Son un punto de partida, no una decisión.</p>
+        <div class="recomendacion">
+          <h3 id="t-reco-vista">Sugerencias</h3>
+          <ol id="recos"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-se-hizo" aria-labelledby="t-como-se-hizo">
+      <div class="contenedor prosa">
+        <span class="eyebrow">04 · Para especialistas</span>
+        <h2 id="t-como-se-hizo">Cómo se hizo</h2>
+        <p>Detalles técnicos para quien quiera revisar o repetir el análisis.</p>
+
+        <details class="detalle">
+          <summary>Pasos del análisis</summary>
+          <ol>
+            <li><strong>Libro de códigos:</strong> 4 temas y 14 subnarrativas, cada una con su marco («qué afirma»), términos y hashtags. Normalización sin tildes y con exclusiones (p. ej. «agua de coco»).</li>
+            <li><strong>Clasificación:</strong> palabra = 1 punto, frase = 2, hashtag = 2. Se asigna el tema con 2 puntos o más. Una publicación puede tener varios temas. No juzga si algo es verdadero ni qué postura toma.</li>
+            <li><strong>Ubicación:</strong> lugar etiquetado (confianza alta), lugares mencionados en texto, transcripción o hashtags (media) y ubicación de la cuenta (baja). «Guatemala» sola cuenta como país.</li>
+            <li><strong>Red:</strong> aristas dirigidas autor → cuenta objetivo (dueto, stitch, repost, colaboración, respuesta, cita, mención), ponderadas por número de interacciones.</li>
+            <li><strong>Métricas por filtro:</strong> para cada tema y departamento, PageRank («influencia»), intermediación de Brandes («puente»), grado («contactos»), comunidades de Louvain («grupos») y modularidad Q.</li>
+            <li><strong>Validación:</strong> muestra estratificada de 200 publicaciones para dos codificadores; kappa de Cohen ≥ 0,70 y precisión del diccionario.</li>
+          </ol>
+        </details>
+
+        <details class="detalle">
+          <summary>Reglas de las sugerencias</summary>
+          <ul>
+            <li><strong>Cuentas puente:</strong> alta intermediación y PageRank moderado.</li>
+            <li><strong>Alerta:</strong> el volumen de las últimas 2 semanas supera en más de 40 % al promedio de las 4 anteriores (mínimo 10 publicaciones).</li>
+            <li><strong>Mensaje:</strong> responder al marco de la subnarrativa dominante, no solo al dato.</li>
+            <li><strong>Canal:</strong> la plataforma con más interacción total en la vista.</li>
+          </ul>
+        </details>
+
+        <details class="detalle">
+          <summary>Hashtags que el libro de códigos todavía no incluye</summary>
+          <p id="emergentes"></p>
+        </details>
+
+        <details class="detalle">
+          <summary>Datos, privacidad y archivos</summary>
+          <p>El análisis recibe un CSV con una fila por publicación (<a href="../data/crudo/plantilla_publicaciones.csv" download>plantilla</a>). Fuentes posibles: TikTok Research API y Meta Content Library (requieren aprobación académica), API de X (de pago), captura académica con Zeeschuimer + 4CAT, o codificación manual. Para TikTok conviene transcribir el audio (por ejemplo con Whisper).</p>
+          <p>Los datos crudos quedan en <code>data/crudo/</code> y no se suben al repositorio. Las cuentas de particulares se seudonimizan; lo publicado no incluye el texto de las publicaciones.</p>
+          <ul>
+            <li><a href="../analisis/pipeline_narrativas.py">pipeline_narrativas.py</a>: clasificación, ubicación y métricas</li>
+            <li><a href="../analisis/libro_codigos.json">libro_codigos.json</a>: temas, subnarrativas y términos</li>
+            <li><a href="../analisis/geografia_gt.json">geografia_gt.json</a>: los 22 departamentos y sus nombres alternativos</li>
+            <li><a href="../analisis/sna.py">sna.py</a>: PageRank, Brandes, Louvain y modularidad</li>
+            <li><a href="../data/cuentas_narrativas.csv" download>cuentas_narrativas.csv</a> y <a href="../data/publicaciones_clasificadas.csv" download>publicaciones_clasificadas.csv</a>: para Excel</li>
+            <li><a href="../neo4j/narrativas.cypher">narrativas.cypher</a>: carga y consultas para Neo4j</li>
+          </ul>
+        </details>
+
+        <details class="detalle">
+          <summary>Activar la búsqueda en vivo</summary>
+          <ol>
+            <li>Descarga el repositorio y abre una terminal en su carpeta.</li>
+            <li>Ejecuta <code>python analisis/servidor_local.py</code>.</li>
+            <li>Abre <code>http://localhost:8000/proyectos/red-influencia.html#tiempo-real</code>.</li>
+          </ol>
+          <p>Las noticias (GDELT) funcionan sin cuenta. Para TikTok define <code>TIKTOK_CLIENT_KEY</code> y <code>TIKTOK_CLIENT_SECRET</code> (acceso académico aprobado). Para X define <code>X_BEARER_TOKEN</code>; X cobra por publicación leída.</p>
+        </details>
+
+        <details class="detalle">
+          <summary>Limitaciones y ética</summary>
+          <ul>
+            <li><strong>Diccionario:</strong> no detecta ironía ni términos nuevos; hay que validarlo a mano antes de sacar conclusiones.</li>
+            <li><strong>Ubicación:</strong> muchas cuentas no dicen dónde están. Se excluyeron nombres de lugares repetidos en México o en varios departamentos.</li>
+            <li><strong>Cobertura:</strong> los resultados describen la muestra recolectada, no a toda la población en línea.</li>
+            <li><strong>Neutralidad:</strong> se describe el tema de la conversación, sin asignar culpas ni posturas, y no se señala a nadie por una métrica de red.</li>
+            <li><strong>Marco legal:</strong> Guatemala no tiene ley general de protección de datos; se aplican minimización, seudonimización y los términos de cada plataforma, solo con contenido público.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="contenedor">
+      <span>© 2026 Juli0F</span>
+      <span><a href="../index.html">← Inicio</a></span>
+    </div>
+  </footer>
+</body>
+</html>

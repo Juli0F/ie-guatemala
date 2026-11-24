@@ -1,0 +1,121 @@
+﻿id,plataforma,grupo,postura,seguidores,engagement,grado,grado_ponderado,intermediacion,pagerank,comunidad,rol
+ig_jov_18,instagram,jovenes,neutral,96663,0.0219,6,29,0.01596,0.05048,2,Nodo de influencia
+tt_ori_01,tiktok,origen,pro,11497,0.0858,26,115,0.05308,0.03151,1,Nodo de influencia
+tt_jov_23,tiktok,jovenes,neutral,12079,0.064,2,11,0.00075,0.02592,2,Nodo de influencia
+ig_br_04,instagram,puentes,pro,4153,0.0899,14,53,0.04314,0.02388,1,Nodo de influencia
+tt_br_05,tiktok,puentes,contra,11621,0.0798,14,53,0.07529,0.02296,0,Nodo de influencia
+tt_jov_14,tiktok,jovenes,neutral,134026,0.0828,6,17,0.00696,0.02155,2,Nodo de influencia
+tt_jov_19,tiktok,jovenes,neutral,7897,0.0774,9,42,0.01788,0.0178,2,Nodo de influencia
+tt_jov_06,tiktok,jovenes,neutral,2354,0.0986,5,22,0.00363,0.0171,2,Nodo de influencia
+ig_med_09,instagram,medios,contra,12762,0.0382,10,36,0.03586,0.0171,0,Nodo de influencia
+ig_med_11,instagram,medios,contra,8807,0.0401,12,75,0.0556,0.01708,0,Nodo de influencia
+tt_ori_08,tiktok,origen,pro,3251,0.0839,11,33,0.00562,0.017,1,Nodo de influencia
+tt_ori_00,tiktok,origen,pro,3467,0.0635,21,82,0.03755,0.01666,1,Nodo de influencia
+ig_vec_00,instagram,vecinos,neutral,7070,0.004,9,45,0.02248,0.01646,3,Nodo de influencia
+tt_ori_02,tiktok,origen,pro,453,0.0781,21,95,0.03015,0.01495,1,Amplificador
+tt_ori_05,tiktok,origen,pro,18343,0.0623,11,45,0.00722,0.01466,1,Amplificador
+ig_med_13,instagram,medios,contra,12072,0.0482,10,51,0.02727,0.01413,0,Amplificador
+tt_ori_06,tiktok,origen,pro,15241,0.0758,10,49,0.00363,0.01392,1,Amplificador
+ig_ins_08,instagram,instituciones,contra,9907,0.0178,3,15,0.0036,0.01371,0,Periférico
+tt_med_12,tiktok,medios,contra,10097,0.071,11,45,0.03265,0.01339,0,Amplificador
+ig_vec_06,instagram,vecinos,neutral,1214,0.0315,8,26,0.02348,0.0132,4,Periférico
+ig_ins_04,instagram,instituciones,contra,7565,0.032,5,25,0.00451,0.01318,0,Periférico
+tt_br_00,tiktok,puentes,pro,5922,0.0882,14,60,0.02944,0.01309,1,Amplificador
+ig_br_02,instagram,puentes,contra,40173,0.0583,14,48,0.05891,0.01289,0,Puente (broker)
+ig_vec_22,instagram,vecinos,neutral,9146,0.0263,10,41,0.03191,0.01241,0,Amplificador
+tt_med_07,tiktok,medios,contra,14487,0.0416,5,23,0.00113,0.01231,0,Periférico
+ig_vec_20,instagram,vecinos,neutral,15246,0.0476,5,28,0.00763,0.01222,3,Periférico
+tt_mem_19,tiktok,memes,pro,2795,0.0607,12,52,0.01213,0.01208,1,Amplificador
+ig_vec_04,instagram,vecinos,neutral,14968,0.0369,10,42,0.03006,0.01198,1,Amplificador
+ig_med_01,instagram,medios,neutral,1045,0.051,8,46,0.00987,0.01176,0,Periférico
+tt_ori_09,tiktok,origen,pro,5338,0.0661,11,43,0.01137,0.01134,1,Amplificador
+tt_jov_03,tiktok,jovenes,neutral,4018,0.066,9,47,0.0111,0.01079,2,Periférico
+tt_mem_23,tiktok,memes,pro,27953,0.0682,10,55,0.01198,0.01078,1,Amplificador
+tt_med_02,tiktok,medios,contra,20770,0.0547,5,21,0.0018,0.01073,0,Periférico
+ig_vec_28,instagram,vecinos,neutral,6163,0.0639,6,28,0.0092,0.01058,4,Periférico
+tt_mem_21,tiktok,memes,pro,14125,0.0779,7,45,0.00472,0.01039,1,Periférico
+tt_jov_15,tiktok,jovenes,neutral,17147,0.0578,8,32,0.01395,0.01028,2,Periférico
+tt_ori_07,tiktok,origen,pro,1218,0.0597,13,56,0.00821,0.01024,1,Amplificador
+ig_br_03,instagram,puentes,neutral,3256,0.0813,14,37,0.06265,0.01009,2,Puente (broker)
+ig_mem_10,instagram,memes,pro,10434,0.0513,12,56,0.05204,0.00985,4,Puente (broker)
+tt_mem_18,tiktok,memes,pro,11385,0.0872,8,26,0.00202,0.0094,1,Periférico
+ig_ins_01,instagram,instituciones,contra,882,0.0094,5,19,0.00657,0.0094,0,Periférico
+ig_vec_02,instagram,vecinos,neutral,1389,0.0516,8,37,0.01774,0.00909,4,Periférico
+ig_vec_05,instagram,vecinos,neutral,3596,0.0216,3,17,0.00186,0.00872,4,Periférico
+ig_med_08,instagram,medios,contra,6267,0.0211,9,38,0.01528,0.00869,0,Periférico
+ig_ins_03,instagram,instituciones,contra,1675,0.0463,5,20,0.01002,0.00853,0,Periférico
+ig_med_06,instagram,medios,contra,10320,0.0364,5,22,0.00363,0.00829,0,Periférico
+ig_ori_03,instagram,origen,pro,2773,0.0059,8,33,0.00406,0.00817,1,Periférico
+tt_mem_09,tiktok,memes,pro,21035,0.0561,6,22,0.00247,0.00817,1,Periférico
+tt_mem_16,tiktok,memes,neutral,677,0.0512,8,29,0.00983,0.00801,1,Periférico
+tt_jov_08,tiktok,jovenes,neutral,24788,0.1137,8,33,0.02713,0.00798,1,Periférico
+tt_mem_25,tiktok,memes,pro,35639,0.0636,13,48,0.04426,0.00791,1,Puente (broker)
+tt_mem_15,tiktok,memes,neutral,12372,0.0648,9,43,0.00612,0.00781,1,Periférico
+ig_ins_06,instagram,instituciones,contra,66202,0.0513,7,20,0.0268,0.00773,0,Periférico
+tt_jov_17,tiktok,jovenes,neutral,540,0.0714,9,40,0.02248,0.0077,3,Periférico
+ig_med_05,instagram,medios,contra,47685,0.0219,5,21,0.00365,0.00765,0,Periférico
+ig_med_00,instagram,medios,contra,29582,0.0567,5,19,0.0045,0.00749,0,Periférico
+ig_ins_09,instagram,instituciones,contra,10987,0.0237,5,26,0.00709,0.00716,0,Periférico
+ig_vec_18,instagram,vecinos,neutral,779,0.0194,7,46,0.02382,0.00694,0,Periférico
+tt_mem_01,tiktok,memes,pro,831,0.0466,15,58,0.04916,0.00691,3,Puente (broker)
+ig_vec_29,instagram,vecinos,neutral,2545,0.0366,11,50,0.03942,0.00656,4,Puente (broker)
+tt_jov_07,tiktok,jovenes,neutral,2190,0.0876,10,49,0.01966,0.00644,2,Amplificador
+ig_med_10,instagram,medios,neutral,6472,0.0329,6,28,0.00386,0.00634,0,Periférico
+ig_vec_17,instagram,vecinos,neutral,16851,0.0106,5,25,0.00721,0.00632,0,Periférico
+tt_mem_24,tiktok,memes,pro,1832,0.0426,5,19,0.00062,0.00626,1,Periférico
+tt_mem_00,tiktok,memes,pro,854,0.0626,9,42,0.01495,0.00618,1,Periférico
+tt_mem_12,tiktok,memes,pro,10821,0.0719,7,30,0.00341,0.00616,1,Periférico
+tt_mem_02,tiktok,memes,pro,4597,0.0529,12,51,0.03139,0.00605,1,Amplificador
+ig_vec_08,instagram,vecinos,neutral,6633,0.0589,8,24,0.02208,0.00574,0,Periférico
+tt_mem_22,tiktok,memes,pro,3314,0.0537,11,37,0.01422,0.00572,1,Amplificador
+ig_mem_05,instagram,memes,pro,31014,0.0388,3,20,0.00085,0.0057,3,Periférico
+ig_vec_10,instagram,vecinos,neutral,1345,0.0265,6,25,0.00938,0.00561,3,Periférico
+ig_vec_15,instagram,vecinos,neutral,19436,0.0384,6,32,0.01666,0.00559,3,Periférico
+ig_jov_22,instagram,jovenes,neutral,8371,0.0562,7,32,0.00648,0.00541,2,Periférico
+tt_jov_04,tiktok,jovenes,neutral,10876,0.0841,5,21,0.01034,0.00532,2,Periférico
+tt_mem_06,tiktok,memes,pro,4602,0.0612,14,56,0.01831,0.00525,1,Amplificador
+tt_mem_17,tiktok,memes,pro,912,0.0424,13,59,0.01715,0.00515,3,Amplificador
+ig_vec_24,instagram,vecinos,neutral,8080,0.0145,5,22,0.00935,0.00507,2,Periférico
+tt_mem_07,tiktok,memes,pro,524,0.066,8,37,0.00571,0.00494,2,Periférico
+tt_br_01,tiktok,puentes,neutral,8367,0.0433,14,44,0.0334,0.00491,2,Amplificador
+tt_mem_08,tiktok,memes,pro,3163,0.0601,11,40,0.01635,0.00459,3,Amplificador
+tt_jov_11,tiktok,jovenes,neutral,2036,0.0642,5,24,0.00591,0.00433,2,Periférico
+tt_jov_10,tiktok,jovenes,neutral,2654,0.1,4,22,0.00418,0.00421,2,Periférico
+ig_vec_21,instagram,vecinos,neutral,1100,0.0148,3,17,0.00431,0.0042,0,Periférico
+ig_jov_16,instagram,jovenes,neutral,5774,0.0199,8,31,0.02287,0.0041,0,Periférico
+ig_vec_26,instagram,vecinos,neutral,7192,0.0615,6,12,0.01824,0.00403,1,Periférico
+ig_vec_11,instagram,vecinos,neutral,97522,0.0356,5,9,0.00673,0.00361,0,Periférico
+tt_mem_04,tiktok,memes,pro,40188,0.0365,5,14,0.00086,0.00352,3,Periférico
+ig_vec_01,instagram,vecinos,neutral,360,0.0457,5,22,0.00419,0.00345,0,Periférico
+ig_ins_00,instagram,instituciones,contra,2812,0.0102,10,44,0.03601,0.00331,0,Puente (broker)
+tt_ori_04,tiktok,origen,neutral,1814,0.0523,7,21,0.00097,0.0033,1,Periférico
+tt_mem_13,tiktok,memes,pro,5705,0.0842,9,40,0.00821,0.00319,1,Periférico
+tt_mem_14,tiktok,memes,pro,4369,0.0493,8,39,0.01428,0.00314,1,Periférico
+ig_vec_27,instagram,vecinos,neutral,837,0.0172,6,32,0.01154,0.00313,0,Periférico
+ig_jov_12,instagram,jovenes,neutral,4650,0.0274,6,18,0.00972,0.00307,2,Periférico
+tt_jov_00,tiktok,jovenes,neutral,4526,0.0424,5,21,0.02033,0.00302,2,Periférico
+tt_vec_12,tiktok,vecinos,neutral,3652,0.0492,3,27,0.00104,0.00299,0,Periférico
+tt_jov_21,tiktok,jovenes,neutral,1093,0.064,5,17,0.01393,0.00293,3,Periférico
+ig_vec_19,instagram,vecinos,neutral,4902,0.0502,4,18,0.00391,0.00285,0,Periférico
+tt_jov_09,tiktok,jovenes,neutral,24729,0.0667,4,14,0.00228,0.00271,2,Periférico
+ig_ins_02,instagram,instituciones,neutral,33415,0.0521,3,15,0.00141,0.0027,0,Periférico
+ig_vec_07,instagram,vecinos,neutral,4509,0.004,4,13,0.00575,0.00267,0,Periférico
+tt_jov_02,tiktok,jovenes,neutral,7266,0.0614,5,14,0.0054,0.00264,2,Periférico
+tt_jov_01,tiktok,jovenes,neutral,3196,0.0474,4,14,0.00623,0.0025,2,Periférico
+tt_mem_03,tiktok,memes,pro,2127,0.0548,6,26,0.00396,0.00247,2,Periférico
+ig_vec_16,instagram,vecinos,neutral,3073,0.0232,1,6,0.0,0.00245,2,Periférico
+tt_mem_20,tiktok,memes,pro,169,0.0332,11,48,0.02294,0.00235,1,Amplificador
+ig_vec_14,instagram,vecinos,neutral,1088,0.0135,6,18,0.01458,0.00224,4,Periférico
+tt_vec_09,tiktok,vecinos,neutral,1261,0.0663,6,37,0.01274,0.00222,0,Periférico
+ig_vec_23,instagram,vecinos,neutral,4694,0.0492,5,15,0.0095,0.00218,0,Periférico
+tt_mem_11,tiktok,memes,pro,169,0.0483,6,23,0.02663,0.00215,4,Periférico
+tt_jov_05,tiktok,jovenes,neutral,4107,0.0842,7,28,0.01899,0.0021,2,Periférico
+ig_med_04,instagram,medios,contra,36990,0.043,3,8,0.00055,0.00199,0,Periférico
+ig_vec_13,instagram,vecinos,neutral,2016,0.0553,5,13,0.00595,0.00196,0,Periférico
+tt_jov_13,tiktok,jovenes,neutral,1901,0.0543,4,21,0.00487,0.00189,3,Periférico
+ig_med_03,instagram,medios,contra,927,0.0397,6,17,0.01192,0.00184,2,Periférico
+ig_ins_07,instagram,instituciones,contra,11532,0.0482,2,16,0.0,0.0016,0,Periférico
+tt_jov_20,tiktok,jovenes,neutral,2767,0.0606,5,17,0.00639,0.00152,2,Periférico
+ig_vec_25,instagram,vecinos,neutral,2365,0.054,3,12,0.00107,0.00144,0,Periférico
+ig_vec_03,instagram,vecinos,neutral,113,0.004,6,19,0.01412,0.00127,4,Periférico
+ig_ins_05,instagram,instituciones,contra,670,0.044,3,8,0.00038,0.00127,0,Periférico
