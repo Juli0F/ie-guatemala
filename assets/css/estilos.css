@@ -1,25 +1,29 @@
 /* ==========================================================================
    Portafolio - Evaluación del Entorno de Información
-   Tema claro/oscuro según la preferencia del sistema.
+   Paleta del quetzal (verde esmeralda y rojo), en tema claro u oscuro según
+   la preferencia del sistema.
    ========================================================================== */
 
 :root {
-  --bg-light: #f6f7f9;
-  --bg-dark: #0d1117;
+  --bg-light: #f4f8f5;
+  --bg-dark: #08130e;
   --surface-light: #ffffff;
-  --surface-dark: #161b22;
-  --surface-2-light: #eef1f5;
-  --surface-2-dark: #1d242e;
-  --text-light: #18202a;
-  --text-dark: #e6edf3;
-  --muted-light: #56606c;
-  --muted-dark: #9aa6b2;
-  --border-light: #d8dee6;
-  --border-dark: #2d3641;
-  --accent-light: #0b6bcb;
-  --accent-dark: #58a6ff;
+  --surface-dark: #0f1d17;
+  --surface-2-light: #e8f1ec;
+  --surface-2-dark: #16271f;
+  --text-light: #12221a;
+  --text-dark: #e6f2ec;
+  --muted-light: #4d6157;
+  --muted-dark: #9ab3a6;
+  --border-light: #cfdfd6;
+  --border-dark: #22392e;
+  --accent-light: #0b7a4b;
+  --accent-dark: #34d399;
   --accent-text-light: #ffffff;
-  --accent-text-dark: #0d1117;
+  --accent-text-dark: #05140d;
+  /* velo sobre el quetzal de fondo: el color de fondo con transparencia */
+  --velo-light: rgb(244 248 245 / 0.82);
+  --velo-dark: rgb(8 19 14 / 0.78);
 
   /* Plataformas */
   --tiktok-light: #c4245a;
@@ -32,8 +36,8 @@
   --pro-dark: #fb923c;
   --neutral-light: #6b7280;
   --neutral-dark: #9ca3af;
-  --contra-light: #047857;
-  --contra-dark: #34d399;
+  --contra-light: #0e6f8a;
+  --contra-dark: #5fd0e6;
 
   --bg: var(--bg-light);
   --surface: var(--surface-light);
@@ -43,6 +47,7 @@
   --border: var(--border-light);
   --accent: var(--accent-light);
   --accent-text: var(--accent-text-light);
+  --velo: var(--velo-light);
   --tiktok: var(--tiktok-light);
   --instagram: var(--instagram-light);
   --pro: var(--pro-light);
@@ -58,6 +63,7 @@
     --border: var(--border-dark);
     --accent: var(--accent-dark);
     --accent-text: var(--accent-text-dark);
+    --velo: var(--velo-dark);
     --tiktok: var(--tiktok-dark);
     --instagram: var(--instagram-dark);
     --pro: var(--pro-dark);
@@ -74,6 +80,7 @@
     --border: light-dark(var(--border-light), var(--border-dark));
     --accent: light-dark(var(--accent-light), var(--accent-dark));
     --accent-text: light-dark(var(--accent-text-light), var(--accent-text-dark));
+    --velo: light-dark(var(--velo-light), var(--velo-dark));
     --tiktok: light-dark(var(--tiktok-light), var(--tiktok-dark));
     --instagram: light-dark(var(--instagram-light), var(--instagram-dark));
     --pro: light-dark(var(--pro-light), var(--pro-dark));
@@ -86,6 +93,10 @@
   @media (prefers-color-scheme: dark) {
     --com-0: #60a5fa; --com-1: #fb923c; --com-2: #2dd4bf; --com-3: #f472b6; --com-4: #a78bfa; --com-5: #a3e635;
   }
+  @supports (color: light-dark(white, black)) {
+    --com-0: light-dark(#2563eb, #60a5fa); --com-1: light-dark(#c2410c, #fb923c); --com-2: light-dark(#0f766e, #2dd4bf);
+    --com-3: light-dark(#be185d, #f472b6); --com-4: light-dark(#6d28d9, #a78bfa); --com-5: light-dark(#4d7c0f, #a3e635);
+  }
 
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
@@ -94,6 +105,10 @@
 
   color-scheme: light dark;
   accent-color: var(--accent);
+
+  /* el botón de tema cambia <meta name="color-scheme">; aquí se refleja en CSS */
+  &:has(> head > meta[name="color-scheme"][content="dark"]) { color-scheme: dark; }
+  &:has(> head > meta[name="color-scheme"][content="light"]) { color-scheme: light; }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -109,6 +124,21 @@ body {
   color: var(--text);
   background: var(--bg);
   -webkit-text-size-adjust: 100%;
+}
+/* Quetzal fijo de fondo: aparece al bajar más allá de la cabecera (nav.js agrega .con-fondo) */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    linear-gradient(var(--velo), var(--velo)),
+    url("../img/quetzal.svg") no-repeat 88% 55% / auto 92vh;
+  opacity: 0;
+}
+body.con-fondo::before { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  body::before { transition: opacity 0.6s ease; }
+}
+@media (width < 760px) {
+  body::before { background-position: 0 0, 50% 60%; background-size: auto, auto 80vh; }
 }
 
 h1, h2, h3, h4 { line-height: 1.2; text-wrap: balance; margin-block: 0 0.6em; }
@@ -148,6 +178,30 @@ section + section { border-block-start: 1px solid var(--border); }
   block-size: 3.75rem; overflow: hidden;
 }
 .header-inner > * { flex-shrink: 0; white-space: nowrap; }
+.header-inner .site-nav { margin-inline-start: auto; }
+
+/* Botón de tema claro / oscuro: muestra la acción contraria al tema que se ve */
+.tema-boton {
+  display: inline-grid; place-items: center; inline-size: 2.4rem; block-size: 2.4rem; padding: 0;
+  color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;
+}
+.tema-boton:hover { border-color: var(--accent); color: var(--accent); }
+.tema-boton svg { inline-size: 1.2rem; block-size: 1.2rem; grid-area: 1 / 1; }
+.tema-boton .a-claro { display: none; }
+:root:has(> head > meta[name="color-scheme"][content="dark"]) .tema-boton {
+  .a-claro { display: block; }
+  .a-oscuro { display: none; }
+}
+@media (prefers-color-scheme: dark) {
+  :root:not(:has(> head > meta[name="color-scheme"][content="light"])) .tema-boton {
+    .a-claro { display: block; }
+    .a-oscuro { display: none; }
+  }
+}
+.visualmente-oculto {
+  position: absolute !important; inline-size: 1px; block-size: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
 .site-logo {
   font-weight: 700; color: var(--text); text-decoration: none; letter-spacing: -0.01em;
   display: inline-flex; align-items: center; gap: 0.55rem;
@@ -203,7 +257,25 @@ section + section { border-block-start: 1px solid var(--border); }
 .is-measuring * { transition: none !important; }
 
 /* ---------- Hero ---------- */
-.hero { padding-block: clamp(3rem, 2rem + 6vw, 6.5rem) clamp(2.5rem, 2rem + 3vw, 4rem); }
+.hero {
+  padding-block: clamp(3rem, 2rem + 6vw, 6.5rem) clamp(2.5rem, 2rem + 3vw, 4rem);
+  position: relative; isolation: isolate; overflow: clip;
+  background:
+    radial-gradient(60rem 30rem at 85% 20%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 70%),
+    var(--bg);
+}
+/* Quetzal de la cabecera */
+.hero::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  inset-block: 0.5rem 0; inset-inline-end: max(0rem, calc((100vw - 72rem) / 2));
+  inline-size: min(42vw, 30rem);
+  background: url("../img/quetzal.svg") no-repeat right top / contain;
+  opacity: 0.35;
+}
+@media (width < 760px) {
+  .hero::before { opacity: 0.14; inline-size: 70vw; inset-inline-end: -12vw; }
+}
+.hero h1, .hero .lead strong { text-shadow: 0 1px 12px var(--bg); }
 .hero .eyebrow, .eyebrow {
   font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--accent); margin-block-end: 0.8rem; display: block;

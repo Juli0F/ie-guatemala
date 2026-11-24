@@ -36,6 +36,38 @@
   });
 })();
 
+// Botón de tema: dos estados (sistema y su contrario). Se guarda solo si difiere del sistema.
+(() => {
+  const boton = document.getElementById("tema-boton");
+  const meta = document.querySelector('meta[name="color-scheme"]');
+  if (!boton || !meta) return;
+  const sistema = matchMedia("(prefers-color-scheme: dark)");
+  const aplicar = (valor) => {
+    meta.content = valor ?? "light dark";
+    document.dispatchEvent(new Event("cambio-tema"));
+  };
+  boton.addEventListener("click", () => {
+    const actual = meta.content === "light" || meta.content === "dark" ? meta.content : (sistema.matches ? "dark" : "light");
+    const destino = actual === "dark" ? "light" : "dark";
+    const delSistema = sistema.matches ? "dark" : "light";
+    let guardado = destino === delSistema ? null : destino;
+    try {
+      if (guardado) localStorage.setItem("color-scheme", guardado); else localStorage.removeItem("color-scheme");
+    } catch { /* sin almacenamiento: el cambio se aplica igual en esta visita */ }
+    aplicar(guardado);
+  });
+  addEventListener("storage", (e) => { if (e.key === "color-scheme") aplicar(e.newValue); });
+})();
+
+// Quetzal de fondo: aparece cuando la cabecera (con su propio quetzal) sale de la vista
+(() => {
+  const hero = document.querySelector(".hero");
+  if (!hero || !("IntersectionObserver" in window)) return;
+  new IntersectionObserver(([e]) => {
+    document.body.classList.toggle("con-fondo", e.intersectionRatio < 0.35);
+  }, { threshold: [0, 0.35, 1] }).observe(hero);
+})();
+
 // Las páginas cargan datos con fetch y módulos JS, que el navegador bloquea en file://
 if (location.protocol === "file:") {
   document.addEventListener("DOMContentLoaded", () => {

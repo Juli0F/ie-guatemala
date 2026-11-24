@@ -1,0 +1,21 @@
+# Configuración local de Claude Code
+.claude/
+
+# Datos crudos: pueden contener cuentas y textos reales. Solo se publican la plantilla y la muestra sintética.
+data/crudo/*
+!data/crudo/plantilla_publicaciones.csv
+!data/crudo/muestra_sintetica.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Notas personales
+Target.txt

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <script>try{document.querySelector('meta[name=color-scheme]').content=localStorage.getItem('color-scheme')??'light dark'}catch(e){}</script>
   <title>Narrativas, territorio y redes de influencia en Guatemala · Portafolio</title>
   <meta name="description" content="Qué se dice en TikTok, Instagram y X sobre agua, política, narcopolítica y Estado en Guatemala, en qué departamento y qué cuentas lo difunden.">
   <link rel="icon" href="../assets/img/icono.svg" type="image/svg+xml">
@@ -20,7 +21,7 @@
     <div class="header-inner">
       <a class="site-logo" href="../index.html">
         <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9 16 16 25 8M16 16 10 25M16 16l9 8" opacity=".55"/></g><circle cx="8" cy="9" r="3.2" fill="var(--tiktok)"/><circle cx="25" cy="8" r="2.6" fill="var(--instagram)"/><circle cx="16" cy="16" r="4.2" fill="var(--accent)"/><circle cx="10" cy="25" r="2.6" fill="var(--instagram)"/><circle cx="25" cy="24" r="3" fill="var(--tiktok)"/></svg>
-        <span>Juli0F</span>
+        <span>Julio Ixcoy</span>
       </a>
       <nav class="site-nav" aria-label="Principal">
         <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
@@ -33,6 +34,12 @@
           <li><a href="../index.html#perfil">Sobre mí</a></li>
         </ul>
       </nav>
+      <button class="tema-boton" type="button" id="tema-boton">
+        <svg class="a-oscuro" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="a-oscuro visualmente-oculto">Cambiar a tema oscuro</span>
+        <svg class="a-claro" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+        <span class="a-claro visualmente-oculto">Cambiar a tema claro</span>
+      </button>
     </div>
   </header>
 
@@ -292,7 +299,7 @@
 
   <footer class="site-footer">
     <div class="contenedor">
-      <span>© 2026 Juli0F</span>
+      <span>© 2026 Julio Ixcoy</span>
       <span><a href="../index.html">← Inicio</a></span>
     </div>
   </footer>

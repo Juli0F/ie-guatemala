@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <script>try{document.querySelector('meta[name=color-scheme]').content=localStorage.getItem('color-scheme')??'light dark'}catch(e){}</script>
   <title>Portafolio · Qué se dice en redes en Guatemala</title>
   <meta name="description" content="Análisis de lo que se dice en TikTok, Instagram y X sobre agua, política, narcopolítica y Estado en Guatemala, por departamento.">
   <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
@@ -17,7 +18,7 @@
     <div class="header-inner">
       <a class="site-logo" href="index.html">
         <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9 16 16 25 8M16 16 10 25M16 16l9 8" opacity=".55"/></g><circle cx="8" cy="9" r="3.2" fill="var(--tiktok)"/><circle cx="25" cy="8" r="2.6" fill="var(--instagram)"/><circle cx="16" cy="16" r="4.2" fill="var(--accent)"/><circle cx="10" cy="25" r="2.6" fill="var(--instagram)"/><circle cx="25" cy="24" r="3" fill="var(--tiktok)"/></svg>
-        <span>Juli0F</span>
+        <span>Julio Ixcoy</span>
       </a>
       <nav class="site-nav" aria-label="Principal">
         <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
@@ -30,6 +31,12 @@
           <li><a href="#perfil">Sobre mí</a></li>
         </ul>
       </nav>
+      <button class="tema-boton" type="button" id="tema-boton">
+        <svg class="a-oscuro" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="a-oscuro visualmente-oculto">Cambiar a tema oscuro</span>
+        <svg class="a-claro" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+        <span class="a-claro visualmente-oculto">Cambiar a tema claro</span>
+      </button>
     </div>
   </header>
 
@@ -69,7 +76,7 @@
     <section id="herramientas" aria-labelledby="t-herramientas">
       <div class="contenedor">
         <span class="eyebrow">Herramientas</span>
-        <h2 id="t-herramientas">Con qué trabajo</h2>
+        <h2 id="t-herramientas">En este análisis se utilizaron estas herramientas</h2>
         <ul class="chips" aria-label="Herramientas">
           <li class="chip">Python</li>
           <li class="chip">Análisis de redes</li>
@@ -85,17 +92,18 @@
         <div class="prosa">
           <span class="eyebrow">Perfil</span>
           <h2 id="t-perfil">Sobre mí</h2>
-          <!-- Sustituye este párrafo por tu biografía profesional -->
-          <p>Analista de redes sociales e información. Convierto lo que pasa en TikTok, Instagram y X en informes claros para tomar decisiones.</p>
-          <p>Los datos de este sitio son de ejemplo, para no exponer a personas reales.</p>
+          <ul>
+            <li>Desarrollador de software</li>
+            <li>Estudiante de Estadística Aplicada</li>
+            <li>Humano</li>
+          </ul>
         </div>
         <div class="panel">
           <h3>Contacto</h3>
-          <!-- Sustituye los enlaces por los tuyos -->
           <ul>
             <li><a href="https://github.com/Juli0F">GitHub</a></li>
+            <li><a href="https://github.com/Juli0F/ie-guatemala">Enlace al repositorio</a></li>
           </ul>
-          <p class="muted">Código: <a href="https://github.com/Juli0F/portafolio-ie-guatemala">repositorio del portafolio</a>.</p>
         </div>
       </div>
     </section>
@@ -103,7 +111,7 @@
 
   <footer class="site-footer">
     <div class="contenedor">
-      <span>© 2026 Juli0F</span>
+      <span>© 2026 Julio Ixcoy</span>
       <span>Datos de ejemplo.</span>
     </div>
   </footer>

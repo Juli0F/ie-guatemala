@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 640" fill="none">
+  <!-- Quetzal posado en una rama (ilustración original, decorativa) -->
+  <defs>
+    <linearGradient id="plumaje" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#2fd08a"/>
+      <stop offset="0.55" stop-color="#119a5f"/>
+      <stop offset="1" stop-color="#0a5e3c"/>
+    </linearGradient>
+    <linearGradient id="cola" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#16ad6b"/>
+      <stop offset="0.6" stop-color="#0d7a4d"/>
+      <stop offset="1" stop-color="#0a5e3c" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="pecho" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e5243f"/>
+      <stop offset="1" stop-color="#a50d26"/>
+    </linearGradient>
+  </defs>
+
+  <!-- plumas largas de la cola -->
+  <path d="M236 262 C250 340 246 420 280 500 C298 545 322 590 352 632 C318 606 292 566 274 528 C236 446 228 360 222 268 Z" fill="url(#cola)"/>
+  <path d="M226 266 C236 360 216 448 238 530 C246 562 258 600 270 636 C250 610 236 576 228 544 C204 456 210 364 212 270 Z" fill="url(#cola)" opacity="0.85"/>
+  <path d="M244 258 C268 320 286 380 330 430 C350 452 374 470 398 484 C366 480 338 462 318 440 C276 394 254 330 236 266 Z" fill="url(#cola)" opacity="0.7"/>
+
+  <!-- rama -->
+  <path d="M20 284 C110 270 220 290 300 280 C340 275 380 268 410 262" stroke="#6b4a2b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M120 279 C110 300 96 312 80 318" stroke="#6b4a2b" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- cuerpo -->
+  <path d="M196 98 C168 140 168 214 198 258 C214 282 248 286 262 258 C280 214 272 140 248 108 C234 90 208 86 196 98 Z" fill="url(#plumaje)"/>
+  <!-- pecho rojo -->
+  <path d="M190 168 C184 206 192 242 214 262 C230 274 250 268 258 248 C236 244 214 214 210 172 C204 160 194 158 190 168 Z" fill="url(#pecho)"/>
+  <!-- ala -->
+  <path d="M238 116 C270 148 278 206 262 254 C250 226 236 182 234 136 C234 126 235 120 238 116 Z" fill="#0b6a43"/>
+  <path d="M244 140 C258 168 262 200 256 232" stroke="#2fd08a" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- cabeza y cresta -->
+  <path d="M188 86 C182 56 204 34 228 36 C220 44 236 46 244 40 C240 52 252 58 258 56 C252 66 256 78 252 90 C246 112 214 120 198 110 C190 104 189 96 188 86 Z" fill="url(#plumaje)"/>
+  <!-- pico -->
+  <path d="M190 80 L172 90 L192 94 Z" fill="#e8b923"/>
+  <!-- ojo -->
+  <circle cx="206" cy="76" r="5" fill="#081a12"/>
+  <circle cx="207.5" cy="74.5" r="1.6" fill="#ffffff"/>
+
+  <!-- patas -->
+  <path d="M214 262 L210 282 M232 266 L234 284" stroke="#3d2a18" stroke-width="5" stroke-linecap="round"/>
+</svg>

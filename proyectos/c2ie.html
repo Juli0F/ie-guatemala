@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <script>try{document.querySelector('meta[name=color-scheme]').content=localStorage.getItem('color-scheme')??'light dark'}catch(e){}</script>
   <meta name="robots" content="noindex, nofollow">
   <title>Simulación de campaña y medición de efectos (informe C2IE) · Portafolio</title>
   <meta name="description" content="Simulación Monte Carlo de estrategias de prebunking sobre una red de TikTok e Instagram, diferencias en diferencias e indicadores MOP/MOE.">
@@ -19,7 +20,7 @@
     <div class="header-inner">
       <a class="site-logo" href="../index.html">
         <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9 16 16 25 8M16 16 10 25M16 16l9 8" opacity=".55"/></g><circle cx="8" cy="9" r="3.2" fill="var(--tiktok)"/><circle cx="25" cy="8" r="2.6" fill="var(--instagram)"/><circle cx="16" cy="16" r="4.2" fill="var(--accent)"/><circle cx="10" cy="25" r="2.6" fill="var(--instagram)"/><circle cx="25" cy="24" r="3" fill="var(--tiktok)"/></svg>
-        <span>Juli0F</span>
+        <span>Julio Ixcoy</span>
       </a>
       <nav class="site-nav" aria-label="Principal">
         <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
@@ -34,6 +35,12 @@
           <li><a href="../index.html#perfil">Perfil</a></li>
         </ul>
       </nav>
+      <button class="tema-boton" type="button" id="tema-boton">
+        <svg class="a-oscuro" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="a-oscuro visualmente-oculto">Cambiar a tema oscuro</span>
+        <svg class="a-claro" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+        <span class="a-claro visualmente-oculto">Cambiar a tema claro</span>
+      </button>
     </div>
   </header>
 

@@ -90,9 +90,9 @@ intermediación contra esa librería.
 
 ## Publicar en GitHub Pages
 
-Repositorio: <https://github.com/Juli0F/portafolio-ie-guatemala> (remoto `origin`, rama `main`).
+Repositorio: <https://github.com/Juli0F/ie-guatemala> (remoto `origin`, rama `main`).
 
-1. Crea en GitHub el repositorio público vacío `portafolio-ie-guatemala`, sin README ni licencia.
+1. Crea en GitHub el repositorio público vacío `ie-guatemala`, sin README ni licencia.
 2. Desde esta carpeta:
    ```
    git add .
@@ -100,7 +100,7 @@ Repositorio: <https://github.com/Juli0F/portafolio-ie-guatemala> (remoto `origin
    git push -u origin main
    ```
 3. En **Settings → Pages**, elige *Deploy from a branch*, rama `main`, carpeta `/ (root)`.
-4. El sitio queda en <https://juli0f.github.io/portafolio-ie-guatemala/>.
+4. El sitio queda en <https://juli0f.github.io/ie-guatemala/>.
 
 Antes de cada `git add`, comprueba con `git status` que no aparezca nada de `data/crudo/` salvo la plantilla y la muestra.
 

@@ -20,10 +20,11 @@ export function color(variable) {
   return getComputedStyle(sonda).color;
 }
 
-/** Ejecuta `fn` ahora y cada vez que cambie el esquema de color del sistema. */
+/** Ejecuta `fn` ahora y cada vez que cambie el tema (del sistema o con el botón de la cabecera). */
 export function alCambiarTema(fn) {
   fn();
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", fn);
+  document.addEventListener("cambio-tema", fn);
 }
 
 export const fmt = {
