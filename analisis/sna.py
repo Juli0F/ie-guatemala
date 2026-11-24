@@ -1,7 +1,7 @@
 """
 Algoritmos de análisis de redes sociales (SNA) en Python puro.
 
-Compartidos por todos los scripts del portafolio. Cada función sigue el
+Compartidos por todos los scripts del proyecto. Cada función sigue el
 algoritmo de referencia citado y no requiere dependencias externas.
 
     no_dirigido        grafo no dirigido ponderado a partir de aristas dirigidas

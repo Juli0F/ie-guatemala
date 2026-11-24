@@ -2,7 +2,7 @@
 Genera una MUESTRA SINTÉTICA de publicaciones de TikTok e Instagram en Guatemala
 con el mismo formato que `data/crudo/plantilla_publicaciones.csv`.
 
-Sirve para probar el pipeline y publicar el portafolio mientras se reúnen datos
+Sirve para probar el pipeline y publicar el sitio mientras se reúnen datos
 reales. Las cuentas, los textos y las cifras son inventados: no describen a
 personas, medios ni instituciones reales.
 

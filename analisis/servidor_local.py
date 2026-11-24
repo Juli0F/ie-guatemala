@@ -2,7 +2,7 @@
 Servidor local con búsqueda en tiempo real
 ==========================================
 
-Sirve el portafolio en http://localhost:8000 y agrega una API que solo existe al
+Sirve el sitio en http://localhost:8000 y agrega una API que solo existe al
 ejecutarlo en tu equipo (en GitHub Pages el sitio es estático):
 
   GET  /api/estado                     -> fuentes disponibles
@@ -59,7 +59,7 @@ GEOLOC = Geolocalizador(GEO)
 TEMAS = {t["id"]: t for t in LIBRO["temas"]}
 DEPTOS = {d["id"]: d for d in GEO["departamentos"]}
 PERIODOS = {"24h": 1, "3d": 3, "7d": 7, "30d": 30}
-AGENTE = "portafolio-ie-local/1.0 (investigacion academica)"
+AGENTE = "ie-guatemala-local/1.0 (investigacion academica)"
 CAMPOS_CSV = ["id_publicacion", "plataforma", "fecha", "cuenta", "tipo_cuenta", "seguidores", "bio_ubicacion", "texto",
               "hashtags", "transcripcion", "ubicacion_etiquetada", "interaccion", "cuenta_objetivo", "menciones",
               "vistas", "me_gusta", "comentarios", "compartidos"]
@@ -438,11 +438,11 @@ class Manejador(SimpleHTTPRequestHandler):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Servidor local del portafolio con búsqueda en tiempo real")
+    ap = argparse.ArgumentParser(description="Servidor local del sitio con búsqueda en tiempo real")
     ap.add_argument("--puerto", type=int, default=8000)
     args = ap.parse_args()
     servidor = ThreadingHTTPServer(("127.0.0.1", args.puerto), partial(Manejador, directory=str(RAIZ)))
-    print(f"Portafolio en http://127.0.0.1:{args.puerto}/proyectos/red-influencia.html  (Ctrl+C para detener)", flush=True)
+    print(f"Sitio en http://127.0.0.1:{args.puerto}/proyectos/red-influencia.html  (Ctrl+C para detener)", flush=True)
     print(f"Fuentes: GDELT sí · TikTok Research API {'sí' if tiktok_disponible() else 'no (faltan credenciales)'}"
           f" · X API {'sí, hasta ' + str(x_max_resultados()) + ' posts por búsqueda' if x_disponible() else 'no (falta X_BEARER_TOKEN)'}",
           flush=True)
