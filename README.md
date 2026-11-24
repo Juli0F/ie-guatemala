@@ -96,7 +96,7 @@ Repositorio: <https://github.com/Juli0F/ie-guatemala> (remoto `origin`, rama `ma
 2. Desde esta carpeta:
    ```
    git add .
-   git commit -m "Portafolio IE Guatemala"
+   git commit -m "Sitio IE Guatemala"
    git push -u origin main
    ```
 3. En **Settings → Pages**, elige *Deploy from a branch*, rama `main`, carpeta `/ (root)`.
