@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://juli0f.github.io/ie-guatemala/sitemap.xml
