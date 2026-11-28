@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es-GT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script>try{document.querySelector('meta[name=color-scheme]').content=localStorage.getItem('color-scheme')??'light dark'}catch(e){}</script>
+  <title>OSINT Guatemala: qué es, cómo se hace, herramientas y ética</title>
+  <meta name="description" content="OSINT en Guatemala: qué es, en qué se diferencia de SOCMINT, el proceso paso a paso, herramientas como GDELT, 4CAT o Whisper y el marco legal guatemalteco.">
+  <meta name="author" content="Julio Ixcoy">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://juli0f.github.io/ie-guatemala/osint-guatemala.html">
+  <meta name="theme-color" content="#0b7a4b" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#08130e" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_GT">
+  <meta property="og:site_name" content="IE Guatemala">
+  <meta property="og:title" content="OSINT Guatemala: qué es, cómo se hace, herramientas y ética">
+  <meta property="og:description" content="OSINT en Guatemala: qué es, en qué se diferencia de SOCMINT, el proceso paso a paso, herramientas como GDELT, 4CAT o Whisper y el marco legal guatemalteco.">
+  <meta property="og:url" content="https://juli0f.github.io/ie-guatemala/osint-guatemala.html">
+  <meta property="og:image" content="https://juli0f.github.io/ie-guatemala/assets/img/compartir.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Qué se dice en redes, dónde y quién lo difunde. Guatemala, por departamento.">
+  <meta property="article:author" content="https://juli0f.github.io/ie-guatemala/#perfil">
+  <meta property="article:published_time" content="2026-11-28">
+  <meta property="article:modified_time" content="2026-11-28">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OSINT Guatemala: qué es, cómo se hace, herramientas y ética">
+  <meta name="twitter:description" content="OSINT en Guatemala: qué es, en qué se diferencia de SOCMINT, el proceso paso a paso, herramientas como GDELT, 4CAT o Whisper y el marco legal guatemalteco.">
+  <meta name="twitter:image" content="https://juli0f.github.io/ie-guatemala/assets/img/compartir.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html#articulo",
+        "headline": "OSINT en Guatemala: qué es, cómo se hace y con qué herramientas",
+        "description": "OSINT en Guatemala: qué es, en qué se diferencia de SOCMINT, el proceso paso a paso, herramientas como GDELT, 4CAT o Whisper y el marco legal guatemalteco.",
+        "url": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html",
+        "mainEntityOfPage": {"@id": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html"},
+        "inLanguage": "es-GT",
+        "image": "https://juli0f.github.io/ie-guatemala/assets/img/compartir.png",
+        "author": {"@id": "https://juli0f.github.io/ie-guatemala/#autor"},
+        "publisher": {"@id": "https://juli0f.github.io/ie-guatemala/#autor"},
+        "isPartOf": {"@id": "https://juli0f.github.io/ie-guatemala/#sitio"},
+        "datePublished": "2026-11-28",
+        "dateModified": "2026-11-28",
+        "about": [
+          {"@type": "Thing", "name": "OSINT", "alternateName": "Inteligencia de fuentes abiertas"},
+          {"@type": "Thing", "name": "SOCMINT", "alternateName": "Inteligencia de redes sociales"},
+          {"@type": "Place", "name": "Guatemala"},
+          {"@type": "Thing", "name": "Análisis de narrativas en redes sociales"},
+          {"@type": "Thing", "name": "Ley de Acceso a la Información Pública (Decreto 57-2008)"}
+        ],
+        "keywords": "OSINT Guatemala, OSINT en Guatemala, inteligencia de fuentes abiertas, SOCMINT Guatemala, herramientas OSINT, GDELT, 4CAT, Zeeschuimer, TikTok Research API, Meta Content Library, Whisper, Neo4j, Decreto 57-2008, política, partidos políticos, narcopolítica, agua",
+        "proficiencyLevel": "Beginner"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html",
+        "url": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html",
+        "name": "OSINT Guatemala: qué es, cómo se hace, herramientas y ética",
+        "inLanguage": "es-GT",
+        "isPartOf": {"@id": "https://juli0f.github.io/ie-guatemala/#sitio"},
+        "primaryImageOfPage": "https://juli0f.github.io/ie-guatemala/assets/img/compartir.png",
+        "breadcrumb": {"@id": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html#migas"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html#migas",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://juli0f.github.io/ie-guatemala/"},
+          {"@type": "ListItem", "position": 2, "name": "OSINT en Guatemala", "item": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html#preguntas",
+        "isPartOf": {"@id": "https://juli0f.github.io/ie-guatemala/osint-guatemala.html"},
+        "mainEntity": [
+          {"@type": "Question", "name": "¿Es legal hacer OSINT en Guatemala?", "acceptedAnswer": {"@type": "Answer", "text": "Consultar información pública no está prohibido, y la Constitución protege la libre emisión del pensamiento (artículo 35). Los límites están en la correspondencia y los documentos privados (artículo 24), en el respeto a la vida privada y en la Ley de Acceso a la Información Pública, que clasifica las opiniones políticas como dato sensible y castiga la venta de datos personales. Esto no es asesoría legal: para un caso concreto, consulta a un abogado."}},
+          {"@type": "Question", "name": "¿En qué se diferencia OSINT de hackear o espiar?", "acceptedAnswer": {"@type": "Answer", "text": "OSINT trabaja solo con lo que cualquiera puede ver sin engañar a nadie ni romper una protección. Entrar a una cuenta ajena, usar contraseñas filtradas, hacerse pasar por otra persona para que acepte una solicitud o leer mensajes privados ya no es OSINT."}},
+          {"@type": "Question", "name": "¿Se puede hacer OSINT sin pagar herramientas?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. GDELT, Zeeschuimer, 4CAT, Whisper, Python y la edición Community de Neo4j no cuestan nada. Lo que suele tener costo es el acceso masivo a una plataforma, como la API de X, y el tiempo de verificación manual, que ninguna herramienta reemplaza."}},
+          {"@type": "Question", "name": "¿Por dónde empiezo si quiero aprender OSINT?", "acceptedAnswer": {"@type": "Answer", "text": "Elige una pregunta pequeña y verificable, por ejemplo cuándo empezó a circular un video sobre cortes de agua en tu municipio. Rastréalo hasta su primera publicación, anota cada fuente y cada paso, y revisa si otra persona llegaría al mismo resultado con tus notas."}},
+          {"@type": "Question", "name": "¿Los datos del proyecto de este sitio son reales?", "acceptedAnswer": {"@type": "Answer", "text": "No. Los datos publicados en el proyecto de narrativas son sintéticos: se generaron para mostrar el método y las visualizaciones. No describen cuentas ni publicaciones reales."}}
+        ]
+      },
+      {"@type": "WebSite", "@id": "https://juli0f.github.io/ie-guatemala/#sitio", "name": "IE Guatemala", "url": "https://juli0f.github.io/ie-guatemala/"},
+      {"@type": "Person", "@id": "https://juli0f.github.io/ie-guatemala/#autor", "name": "Julio Ixcoy", "url": "https://juli0f.github.io/ie-guatemala/", "sameAs": ["https://github.com/Juli0F", "https://t.me/JulioPwn"], "jobTitle": "Desarrollador de software"}
+    ]
+  }
+  </script>
+  <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script src="assets/js/nav.js" defer></script>
+  <style>
+    .migas ol { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; padding: 0; margin: 0 0 1rem; font-size: 0.88rem; color: var(--muted); }
+    .migas li + li::before { content: "/"; margin-inline-end: 0.4rem; }
+    .firma { font-size: 0.92rem; color: var(--muted); margin-block: 1rem 0; }
+    .respuesta-corta { font-size: 1.08rem; max-inline-size: 46rem; border-inline-start: 4px solid var(--accent); padding-inline-start: 1rem; margin-block: 1.25rem 0; }
+    .indice-pagina ol { margin: 0; padding-inline-start: 1.25rem; columns: 2 16rem; }
+    .indice-pagina li { margin-block-end: 0.3rem; }
+    .prosa h3 { margin-block-start: 1.6rem; }
+    .comparacion { container-type: inline-size; max-inline-size: 100%; }
+    .comparacion table { border-collapse: separate; border-spacing: 0; }
+    .comparacion tbody th { position: sticky; inset-inline-start: 0; background: var(--surface); font-weight: 600; white-space: nowrap; }
+    .comparacion td { min-inline-size: 11rem; }
+    @container (width < 640px) {
+      .comparacion table, .comparacion caption, .comparacion thead, .comparacion tbody, .comparacion tr, .comparacion th, .comparacion td { display: block; }
+      .comparacion thead { display: none; }
+      .comparacion tr { border-block-end: 1px solid var(--border); padding-block: 0.4rem; }
+      .comparacion tbody th { position: static; background: var(--surface-2); border-block-end: 0; }
+      .comparacion td { border-block-end: 0; padding-block: 0.25rem; min-inline-size: 0; }
+      .comparacion td::before { font-weight: 600; color: var(--muted); }
+      .comparacion td:nth-of-type(1)::before { content: "Sirve para: "; }
+      .comparacion td:nth-of-type(2)::before { content: "Acceso: "; }
+      .comparacion td:nth-of-type(3)::before { content: "Costo: "; }
+      .comparacion td:nth-of-type(4)::before { content: "En el proyecto: "; }
+    }
+    .faq h3 { font-size: 1.08rem; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9 16 16 25 8M16 16 10 25M16 16l9 8" opacity=".55"/></g><circle cx="8" cy="9" r="3.2" fill="var(--tiktok)"/><circle cx="25" cy="8" r="2.6" fill="var(--instagram)"/><circle cx="16" cy="16" r="4.2" fill="var(--accent)"/><circle cx="10" cy="25" r="2.6" fill="var(--instagram)"/><circle cx="25" cy="24" r="3" fill="var(--tiktok)"/></svg>
+        <span>Julio Ixcoy</span>
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        <button class="menu-button" type="button" popovertarget="site-menu" aria-controls="site-menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Menú</span>
+        </button>
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="osint-guatemala.html" aria-current="page">OSINT en Guatemala</a></li>
+          <li><a href="proyectos/red-influencia.html">Narrativas y redes</a></li>
+          <li><a href="index.html#perfil">Sobre mí</a></li>
+        </ul>
+      </nav>
+      <button class="tema-boton" type="button" id="tema-boton">
+        <svg class="a-oscuro" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="a-oscuro visualmente-oculto">Cambiar a tema oscuro</span>
+        <svg class="a-claro" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+        <span class="a-claro visualmente-oculto">Cambiar a tema claro</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <article>
+      <section class="hero">
+        <div class="contenedor">
+          <nav class="migas" aria-label="Ruta de navegación">
+            <ol>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="osint-guatemala.html" aria-current="page">OSINT en Guatemala</a></li>
+            </ol>
+          </nav>
+          <span class="eyebrow">Guía · OSINT · SOCMINT</span>
+          <h1>OSINT en Guatemala: qué es, cómo se hace y con qué herramientas</h1>
+          <p class="respuesta-corta">OSINT es investigar con información pública: noticias, registros oficiales, sitios web y redes sociales. En Guatemala sirve para verificar lo que circula en TikTok, Instagram y X, seguir cómo se mueven las narrativas sobre política, narcopolítica o agua entre departamentos y documentar hallazgos que otra persona pueda revisar.</p>
+          <p class="firma">Por <a href="index.html#perfil" rel="author">Julio Ixcoy</a> · Actualizado el <time datetime="2026-11-28">28 de noviembre de 2026</time></p>
+        </div>
+      </section>
+
+      <section aria-labelledby="t-indice">
+        <div class="contenedor prosa">
+          <div class="panel indice-pagina">
+            <h2 id="t-indice" class="visualmente-oculto">En esta página</h2>
+            <ol>
+              <li><a href="#que-es-osint">Qué es OSINT</a></li>
+              <li><a href="#que-es-socmint">Qué es SOCMINT</a></li>
+              <li><a href="#usos">Para qué se usa en Guatemala</a></li>
+              <li><a href="#proceso">El proceso, paso a paso</a></li>
+              <li><a href="#herramientas">Herramientas y fuentes</a></li>
+              <li><a href="#marco-legal">Ética y marco legal</a></li>
+              <li><a href="#como-lo-aplico">Cómo lo aplico</a></li>
+              <li><a href="#preguntas">Preguntas frecuentes</a></li>
+            </ol>
+          </div>
+
+          <h2 id="que-es-osint">¿Qué es OSINT?</h2>
+          <p>OSINT son las siglas en inglés de <em>open source intelligence</em>, inteligencia de fuentes abiertas. La palabra «inteligencia» no significa espionaje. Significa convertir datos sueltos en una respuesta útil para tomar una decisión.</p>
+          <p>Una fuente es abierta cuando cualquiera puede consultarla de forma legal, sin contraseñas ajenas ni engaños. En Guatemala eso incluye los portales de información pública de las instituciones, el Diario de Centro América, Guatecompras, los medios de comunicación, los perfiles públicos en redes sociales y los archivos de noticias.</p>
+          <p>Lo que distingue a OSINT de una búsqueda en Google es el método. Hay una pregunta definida, un registro de dónde salió cada dato y una verificación antes de concluir. Sin eso, lo que queda es una colección de capturas de pantalla.</p>
+
+          <h2 id="que-es-socmint">¿Qué es SOCMINT y en qué se diferencia de OSINT?</h2>
+          <p>SOCMINT (<em>social media intelligence</em>) es la rama de OSINT dedicada a las redes sociales. OSINT abarca cualquier fuente pública; SOCMINT se limita a publicaciones, cuentas e interacciones en plataformas como TikTok, Instagram, X o Facebook.</p>
+          <p>La diferencia práctica está en el tipo de dato. Un registro oficial cambia poco y tiene un responsable identificable. Una red social cambia cada hora, mezcla texto, audio y video, y está llena de cuentas anónimas o coordinadas. Por eso SOCMINT necesita técnicas propias:</p>
+          <ul>
+            <li>transcribir el audio de los videos, porque en TikTok lo importante casi nunca está en la descripción;</li>
+            <li>reconstruir quién responde, cita o menciona a quién, para ver la red y no solo cada publicación;</li>
+            <li>ubicar el contenido en un lugar cuando la cuenta no lo dice, con distintos niveles de confianza;</li>
+            <li>guardar la evidencia con fecha, porque una publicación puede borrarse al día siguiente.</li>
+          </ul>
+
+          <h2 id="usos">¿Para qué se usa OSINT en Guatemala?</h2>
+          <h3>Periodismo de datos</h3>
+          <p>Cruzar contrataciones publicadas en Guatecompras con registros mercantiles, declaraciones públicas y noticias permite documentar relaciones que no aparecen en un solo documento.</p>
+          <h3>Análisis de narrativas en redes</h3>
+          <p>Saber qué se dice sobre un tema, en qué departamentos crece y qué cuentas lo difunden. Es el uso que desarrollo en este sitio, con política, partidos políticos, narcopolítica, agua y Estado.</p>
+          <h3>Verificación</h3>
+          <p>Antes de compartir un video sobre un bloqueo o un corte de agua, se puede comprobar si es reciente, si el lugar coincide y quién lo publicó primero. Buscar fotogramas en buscadores de imágenes y comparar con mapas resuelve muchos casos.</p>
+          <h3>Ciberseguridad</h3>
+          <p>Una organización puede revisar qué información suya está expuesta: dominios parecidos al suyo, correos de empleados en sitios públicos o perfiles falsos que la suplantan. Es el primer paso de una evaluación de riesgo.</p>
+          <h3>Investigación académica</h3>
+          <p>Tesis y estudios en ciencias sociales, comunicación o estadística pueden usar publicaciones públicas como datos, siempre que el método sea replicable y los datos personales se protejan.</p>
+
+          <h2 id="proceso">¿Cómo es el proceso de una investigación OSINT?</h2>
+          <p>Se repite en ciclo: lo que se aprende en el análisis suele cambiar la pregunta.</p>
+          <ol class="pasos">
+            <li><strong>Pregunta</strong> Una sola, concreta y con límites de tiempo y lugar. «¿Qué se dijo sobre la escasez de agua en Quetzaltenango en octubre?» funciona; «¿qué pasa con el agua?» no.</li>
+            <li><strong>Fuentes</strong> Lista de dónde puede estar la respuesta: plataformas, medios, registros. Decide qué queda fuera y anótalo.</li>
+            <li><strong>Recolección</strong> Términos de búsqueda, hashtags y fechas definidos antes de empezar. Guarda cada dato con su enlace y la fecha de captura.</li>
+            <li><strong>Verificación</strong> Confirma con una segunda fuente, revisa fechas y ubicación, y descarta duplicados y cuentas automatizadas.</li>
+            <li><strong>Análisis</strong> Clasifica por tema, mide volumen por semana y por departamento, y arma la red de interacciones para ver qué cuentas concentran la conversación.</li>
+            <li><strong>Informe</strong> Responde la pregunta, explica cómo llegaste ahí y di qué no sabes. Las limitaciones son parte del resultado.</li>
+          </ol>
+
+          <h2 id="herramientas">¿Qué herramientas y fuentes se usan para OSINT?</h2>
+          <p>No hace falta una plataforma cara para empezar. Estas son las que uso o evalué para el proyecto, con su tipo de acceso. Las condiciones cambian: revisa el sitio de cada una antes de planificar.</p>
+        </div>
+        <div class="contenedor">
+          <div class="tabla-scroll comparacion" tabindex="0" role="region" aria-labelledby="t-tabla">
+            <table>
+              <caption id="t-tabla">Comparación de herramientas OSINT y SOCMINT</caption>
+              <thead>
+                <tr><th scope="col">Herramienta</th><th scope="col">Sirve para</th><th scope="col">Acceso</th><th scope="col">Costo</th><th scope="col">En el proyecto</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row"><a href="https://www.gdeltproject.org/">GDELT</a></th><td>Monitorear noticias en línea de todo el mundo, en varios idiomas</td><td>Abierto, sin cuenta</td><td>Gratis</td><td>Búsqueda en vivo de noticias</td></tr>
+                <tr><th scope="row"><a href="https://developers.tiktok.com/products/research-api/">TikTok Research API</a></th><td>Videos, cuentas y comentarios públicos de TikTok</td><td>Solicitud de investigación aprobada por TikTok</td><td>Sin costo para quien es aprobado</td><td>Fuente prevista para TikTok</td></tr>
+                <tr><th scope="row"><a href="https://transparency.meta.com/researchtools/meta-content-library">Meta Content Library</a></th><td>Publicaciones públicas de Facebook e Instagram</td><td>Solicitud de investigación aprobada</td><td>Según el acuerdo de acceso</td><td>Fuente prevista para Instagram</td></tr>
+                <tr><th scope="row"><a href="https://developer.x.com/">API de X</a></th><td>Publicaciones, respuestas y cuentas de X</td><td>Cuenta de desarrollador</td><td>De pago</td><td>Búsqueda en vivo de X</td></tr>
+                <tr><th scope="row"><a href="https://github.com/digitalmethodsinitiative/zeeschuimer">Zeeschuimer</a> + <a href="https://github.com/digitalmethodsinitiative/4cat">4CAT</a></th><td>Guardar lo que ves al navegar TikTok, Instagram o X y analizarlo después</td><td>Código abierto; se instala localmente</td><td>Gratis</td><td>Captura académica manual</td></tr>
+                <tr><th scope="row"><a href="https://github.com/openai/whisper">Whisper</a></th><td>Transcribir el audio de videos</td><td>Código abierto; corre en tu computadora</td><td>Gratis</td><td>Texto de los videos de TikTok</td></tr>
+                <tr><th scope="row"><a href="https://www.python.org/">Python</a></th><td>Limpiar, clasificar y medir datos</td><td>Lenguaje abierto</td><td>Gratis</td><td>Clasificación, ubicación y métricas de red</td></tr>
+                <tr><th scope="row"><a href="https://neo4j.com/">Neo4j</a></th><td>Guardar y consultar redes de cuentas e interacciones</td><td>Edición Community descargable</td><td>Gratis (Community)</td><td>Consultas sobre la red</td></tr>
+                <tr><th scope="row">Excel</th><td>Revisar resultados a mano y hacer tablas dinámicas</td><td>Licencia de Microsoft</td><td>De pago</td><td>Exportes en CSV</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="contenedor prosa">
+          <p style="margin-block-start:1.25rem">Una advertencia sobre los extractores automáticos que prometen «bajar todo» de una red social: suelen violar los términos de la plataforma y pueden recoger datos de personas que nunca imaginaron aparecer en una base. Prefiero las vías oficiales o la captura manual con Zeeschuimer, aunque den menos volumen.</p>
+
+          <h2 id="marco-legal">¿Qué dice el marco legal guatemalteco sobre OSINT?</h2>
+          <p>No hay una ley guatemalteca que regule OSINT como tal. Lo que existe son normas generales que marcan límites. Resumo las que verifiqué en el texto oficial; esto no es asesoría legal.</p>
+          <ul>
+            <li><strong>Constitución, artículo 24.</strong> La correspondencia, los documentos y los libros de una persona son inviolables; solo pueden revisarse por resolución judicial. Una investigación de fuentes abiertas no toca mensajes privados.</li>
+            <li><strong>Constitución, artículo 31.</strong> Toda persona puede saber qué dicen de ella los archivos y registros del Estado y pedir que se corrijan. Prohíbe los registros de filiación política, salvo los de las autoridades electorales y los partidos.</li>
+            <li><strong>Constitución, artículo 35.</strong> Protege la libre emisión del pensamiento sin censura previa, y hace responsable a quien falte al respeto a la vida privada.</li>
+          </ul>
+          <p>Fuente: <a href="https://guatemala.justia.com/nacionales/constitucion-de-la-republica-de-guatemala/titulo-ii/capitulo-i">Constitución Política de la República de Guatemala, título II, capítulo I</a>.</p>
+          <p>La <a href="https://acceso.svet.gob.gt/wpsvet/wp-content/uploads/2026/02/DECRETO-57-2008-LEY-DE-ACCESO-A-LA-INFORMACION-PUBLICA.pdf">Ley de Acceso a la Información Pública (Decreto 57-2008)</a> es la otra referencia:</p>
+          <ul>
+            <li>Garantiza el acceso a la información en manos del Estado y de los sujetos obligados, que incluyen a entidades privadas que manejan recursos públicos (artículos 1 y 6). Es una fuente de datos para OSINT.</li>
+            <li>Define como dato sensible, entre otros, el origen étnico, las creencias religiosas y las ideologías y opiniones políticas (artículo 9), y los clasifica como información confidencial (artículo 22).</li>
+            <li>Sanciona con prisión de cinco a ocho años a quien comercialice o distribuya datos personales o sensibles sin autorización escrita del titular, cuando no provengan de registros públicos (artículo 64).</li>
+          </ul>
+          <p>Guatemala no tiene una ley general de protección de datos personales; la Ley de Acceso a la Información Pública se ocupa sobre todo de los datos en manos de los sujetos obligados (<a href="https://consortiumlegal.com/en/2022/06/02/data-protection-in-the-workplace-in-guatemala/">Consortium Legal, 2022</a>).</p>
+          <h3>Criterios que aplico</h3>
+          <p>Que algo sea público no lo vuelve inofensivo. Analizar narrativas políticas implica tratar opiniones políticas, que la ley guatemalteca considera dato sensible. Por eso trabajo con estas reglas:</p>
+          <ul>
+            <li>Solo contenido público y solo por vías que respeten los términos de cada plataforma.</li>
+            <li>Las cuentas de particulares se seudonimizan; se identifican por nombre únicamente instituciones, medios y figuras públicas.</li>
+            <li>No publico el texto de las publicaciones ni vendo o comparto bases de datos de personas.</li>
+            <li>Una métrica de red describe la posición de una cuenta en la conversación. No prueba intención ni culpa.</li>
+          </ul>
+
+          <h2 id="como-lo-aplico">¿Cómo aplico OSINT en este sitio?</h2>
+          <p>En <a href="proyectos/red-influencia.html">Narrativas y redes</a> aplico este proceso a cuatro temas: política y partidos políticos, narcopolítica, agua y Estado. El explorador permite elegir un tema y un departamento y muestra qué se dice, cuánto crece cada semana, en qué departamentos se concentra y qué cuentas conectan grupos distintos.</p>
+          <div class="aviso">
+            <p><strong>Los datos publicados son sintéticos.</strong> Se generaron para mostrar el método y las visualizaciones, y no describen cuentas ni publicaciones reales. El código está en el <a href="https://github.com/Juli0F/ie-guatemala">repositorio</a> para quien quiera revisarlo o usarlo con sus propios datos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="preguntas" aria-labelledby="t-preguntas" class="faq">
+        <div class="contenedor prosa">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 id="t-preguntas">Preguntas frecuentes sobre OSINT en Guatemala</h2>
+          <h3>¿Es legal hacer OSINT en Guatemala?</h3>
+          <p>Consultar información pública no está prohibido, y la Constitución protege la libre emisión del pensamiento (artículo 35). Los límites están en la correspondencia y los documentos privados (artículo 24), en el respeto a la vida privada y en la Ley de Acceso a la Información Pública, que clasifica las opiniones políticas como dato sensible y castiga la venta de datos personales. Esto no es asesoría legal: para un caso concreto, consulta a un abogado.</p>
+          <h3>¿En qué se diferencia OSINT de hackear o espiar?</h3>
+          <p>OSINT trabaja solo con lo que cualquiera puede ver sin engañar a nadie ni romper una protección. Entrar a una cuenta ajena, usar contraseñas filtradas, hacerse pasar por otra persona para que acepte una solicitud o leer mensajes privados ya no es OSINT.</p>
+          <h3>¿Se puede hacer OSINT sin pagar herramientas?</h3>
+          <p>Sí. GDELT, Zeeschuimer, 4CAT, Whisper, Python y la edición Community de Neo4j no cuestan nada. Lo que suele tener costo es el acceso masivo a una plataforma, como la API de X, y el tiempo de verificación manual, que ninguna herramienta reemplaza.</p>
+          <h3>¿Por dónde empiezo si quiero aprender OSINT?</h3>
+          <p>Elige una pregunta pequeña y verificable, por ejemplo cuándo empezó a circular un video sobre cortes de agua en tu municipio. Rastréalo hasta su primera publicación, anota cada fuente y cada paso, y revisa si otra persona llegaría al mismo resultado con tus notas.</p>
+          <h3>¿Los datos del proyecto de este sitio son reales?</h3>
+          <p>No. Los datos publicados en el proyecto de narrativas son sintéticos: se generaron para mostrar el método y las visualizaciones. No describen cuentas ni publicaciones reales.</p>
+          <p class="muted">¿Quieres un análisis así para tu tema? <a href="https://t.me/JulioPwn">Escríbeme por Telegram</a>.</p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="contenedor">
+      <span>© 2026 Julio Ixcoy</span>
+      <span>Actualizado el <time datetime="2026-11-28">28 de noviembre de 2026</time> · <a href="index.html">← Inicio</a></span>
+    </div>
+  </footer>
+</body>
+</html>
