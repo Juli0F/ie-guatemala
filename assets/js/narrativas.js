@@ -1,5 +1,6 @@
 // Proyecto 1 - Explorador de narrativas por tema y departamento.
 import { color, alCambiarTema, fmt, lineas, leyenda, cargar } from "./graficos.js";
+import { CAJA, FORMAS } from "./mapa_gt_formas.js";
 
 const D = await cargar("../data/narrativas.json");
 const { meta, temas, departamentos, semanas, cuentas, publicaciones, subgrafos, emergentes } = D;
@@ -74,38 +75,65 @@ function filtrar({ tema = estado.tema, depto = estado.depto } = {}) {
   return publicaciones.filter((p) => (bit ? p[P_TEMAS] & bit : p[P_TEMAS] > 0) && (di === null || p[P_DEPTO] === di));
 }
 
-// ---------------------------------------------------------------- mapa de cuadrícula
+// ---------------------------------------------------------------- mapa de departamentos
 const mapa = document.getElementById("mapa-gt");
-const filas = Math.max(...departamentos.map((d) => d.fila)) + 1;
-const cols = Math.max(...departamentos.map((d) => d.col)) + 1;
-mapa.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-mapa.style.gridTemplateRows = `repeat(${filas}, auto)`;
-mapa.innerHTML = departamentos.map((d) => `
-  <button type="button" class="casilla" data-depto="${d.id}" style="grid-column:${d.col + 1};grid-row:${d.fila + 1}" aria-pressed="false">
-    <span class="nombre">${d.nombre}</span><span class="valor"></span>
-  </button>`).join("");
-mapa.addEventListener("click", (e) => {
-  const b = e.target.closest(".casilla");
-  if (!b) return;
-  estado.depto = estado.depto === b.dataset.depto ? "nacional" : b.dataset.depto;
+const infoMapa = document.getElementById("info-mapa");
+mapa.innerHTML = `<svg viewBox="${CAJA.join(" ")}" role="presentation">${departamentos.map((d) => `
+  <g class="depto" data-depto="${d.id}" role="button" tabindex="0" aria-pressed="false">
+    <title>${d.nombre}</title>
+    <path d="${FORMAS[d.id].d}"/>
+    <text x="${FORMAS[d.id].x}" y="${FORMAS[d.id].y}" aria-hidden="true"></text>
+  </g>`).join("")}</svg>`;
+const svgMapa = mapa.querySelector("svg");
+let conteoActual = [];
+
+function elegirDepto(g) {
+  estado.depto = estado.depto === g.dataset.depto ? "nacional" : g.dataset.depto;
   selDepto.value = estado.depto;
   actualizar();
+}
+mapa.addEventListener("click", (e) => {
+  const g = e.target.closest(".depto");
+  if (g) elegirDepto(g);
 });
+mapa.addEventListener("keydown", (e) => {
+  const g = e.target.closest(".depto");
+  if (!g || (e.key !== "Enter" && e.key !== " ")) return;
+  e.preventDefault();
+  elegirDepto(g);
+});
+
+function textoInfo(id) {
+  if (id === "nacional") return "Todo el país. Toca un departamento para verlo.";
+  const i = deptoIdx(id);
+  return `${departamentos[i].nombre}: ${fmt.n(conteoActual[i] ?? 0)} publicaciones`;
+}
+const mostrarInfo = (e) => {
+  const g = e.target.closest?.(".depto");
+  infoMapa.textContent = textoInfo(g ? g.dataset.depto : estado.depto);
+};
+for (const ev of ["pointerover", "focusin"]) mapa.addEventListener(ev, mostrarInfo);
+for (const ev of ["pointerleave", "focusout"]) mapa.addEventListener(ev, () => (infoMapa.textContent = textoInfo(estado.depto)));
 
 function pintarMapa() {
   const conteo = new Array(departamentos.length).fill(0);
   for (const p of filtrar({ depto: "nacional" })) if (p[P_DEPTO] >= 0) conteo[p[P_DEPTO]]++;
   const max = Math.max(1, ...conteo);
-  mapa.querySelectorAll(".casilla").forEach((b, i) => {
+  conteoActual = conteo;
+  mapa.querySelectorAll(".depto").forEach((g) => {
+    const i = deptoIdx(g.dataset.depto);
     const n = conteo[i];
     // escala de raíz cuadrada: la capital no aplasta al resto de departamentos
     const pct = Math.round(8 + Math.sqrt(n / max) * 72);
-    b.style.setProperty("--intensidad", `${pct}%`);
-    b.classList.toggle("oscura", pct > 48);
-    b.querySelector(".valor").textContent = fmt.n(n);
-    b.setAttribute("aria-pressed", String(estado.depto === b.dataset.depto));
-    b.setAttribute("aria-label", `${departamentos[i].nombre}: ${fmt.n(n)} publicaciones`);
+    const elegido = estado.depto === g.dataset.depto;
+    g.style.setProperty("--intensidad", `${pct}%`);
+    g.classList.toggle("oscura", pct > 48);
+    g.querySelector("text").textContent = fmt.n(n);
+    g.setAttribute("aria-pressed", String(elegido));
+    g.setAttribute("aria-label", `${departamentos[i].nombre}: ${fmt.n(n)} publicaciones`);
+    if (elegido) svgMapa.append(g); // el borde del elegido queda por encima de sus vecinos
   });
+  infoMapa.textContent = textoInfo(estado.depto);
   return conteo;
 }
 

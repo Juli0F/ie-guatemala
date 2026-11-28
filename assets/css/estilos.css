@@ -453,21 +453,23 @@ tbody tr:hover { background: var(--surface-2); }
   background: none; border: 1px solid var(--border); border-radius: 6px; padding: 0.4rem 0.75rem; color: var(--accent);
 }
 
-.mapa-gt { display: grid; gap: 4px; }
-.casilla {
-  --intensidad: 8%;
-  font: inherit; cursor: pointer; text-align: start;
-  display: flex; flex-direction: column; justify-content: space-between; gap: 0.15rem;
-  min-block-size: 3.6rem; padding: 0.35rem 0.4rem; border-radius: 6px;
-  border: 1px solid var(--border); color: var(--text);
-  background: color-mix(in srgb, var(--accent) var(--intensidad), var(--surface-2));
+.mapa-gt svg { display: block; inline-size: 100%; block-size: auto; max-block-size: 34rem; margin-inline: auto; }
+.depto { --intensidad: 8%; cursor: pointer; outline: none; }
+.depto path {
+  fill: color-mix(in srgb, var(--accent) var(--intensidad), var(--surface-2));
+  stroke: var(--surface); stroke-width: 1.2; stroke-linejoin: round;
+  transition: fill 0.2s;
 }
-.casilla.oscura { color: var(--accent-text); }
-.casilla .nombre { font-size: 0.68rem; line-height: 1.15; overflow-wrap: anywhere; }
-.casilla .valor { font-family: var(--mono); font-size: 0.85rem; font-weight: 700; }
-.casilla:hover { border-color: var(--text); }
-.casilla[aria-pressed="true"] { outline: 3px solid var(--text); outline-offset: 1px; }
-@media (width < 40rem) { .casilla .nombre { font-size: 0.6rem; } .casilla { min-block-size: 3rem; } }
+.depto text {
+  font-family: var(--mono); font-size: 13px; font-weight: 700; fill: var(--text);
+  text-anchor: middle; dominant-baseline: central; pointer-events: none;
+}
+.depto.oscura text { fill: var(--accent-text); }
+.depto:hover path { stroke: var(--text); stroke-width: 2; }
+.depto:focus-visible path { stroke: var(--accent); stroke-width: 3; }
+.depto[aria-pressed="true"] path { stroke: var(--text); stroke-width: 3; }
+.info-mapa { margin: 0.5rem 0 0; font-weight: 600; min-block-size: 1.5em; }
+@media (prefers-reduced-motion: reduce) { .depto path { transition: none; } }
 
 .lectura {
   margin-block-start: 1.5rem; padding: 1.1rem 1.3rem; border-radius: var(--radius);
@@ -492,7 +494,7 @@ tbody tr:hover { background: var(--surface-2); }
 .tr-lista .muted { font-size: 0.85rem; margin-block: 0.2rem 0.5rem; }
 
 @media (forced-colors: active) {
-  .casilla { forced-color-adjust: none; }
+  .mapa-gt svg { forced-color-adjust: none; }
   .segmentado label:has(:checked) { outline: 2px solid Highlight; }
 }
 
